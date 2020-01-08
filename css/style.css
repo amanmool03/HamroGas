@@ -125,6 +125,7 @@ section{
 #home-content-inner{
 display: table-cell;
 vertical-align: middle;
+
 }
 
 #home-heading h1{
@@ -134,6 +135,24 @@ vertical-align: middle;
     margin: 0;
     display: inline-block;
     text-shadow:  3px 3px 10px #000;
+    
+}
+
+#curve
+{
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    top: 80%;
+    
+}
+
+#curve #wave
+{
+    
+    height: 100%;
+    width: 100%;
+
 }
 
 
@@ -213,7 +232,7 @@ vertical-align: middle;
 {
     position: absolute;
     left: 50%;
-    bottom: 20px;
+    bottom: 60px;
     color: white;
     font-size: 32px;
     width: 32px;
@@ -234,7 +253,7 @@ vertical-align: middle;
 /* Content boxes */
 .content-box-lg
 {
-    padding: 100px 0px;
+    padding: 50px 0px;
     /* display: none; */
 }
 
