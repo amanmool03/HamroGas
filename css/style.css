@@ -397,13 +397,13 @@ Other buttons styling
 */
 .content-box-lg
 {
-    padding: 50px 0px;
+    padding: 80px 0px;
     /* display: none; */
 }
 
 .content-box-md
 {
-    padding: 50px 0px;
+    padding: 80px 0px;
 }
 
 
@@ -412,6 +412,10 @@ Other buttons styling
 ********************************************************  vertical heading Stylings      ******************************
 
 */
+#about-left .vertical-heading
+{
+    min-height: 160px;
+}
 .vertical-heading h5{
     color: #f4c613;
     font-size: 15px;
@@ -427,7 +431,7 @@ Other buttons styling
     -o-transform: rotate(270deg);
     position: relative;
     top: 60px;
-    left: -63px;
+    left: -50px;
 
 }
 
@@ -504,8 +508,8 @@ strong{
 }
 
 .about-title p{
-    font-weight: 350;
-    font-size: 18px;
+    font-weight: 400;
+    /* font-size: 18px; */
     margin-top: 20px;
    
 }
@@ -558,7 +562,7 @@ strong{
 
 .about-item p{
     margin-top: 20px;
-    font-weight: 350;
+    /* font-weight: 350; */
 }
 
 /* now hovering ko palo hai guys ahh ha!! */
@@ -580,4 +584,127 @@ strong{
     -moz-transform: translateY(-30px);
     -ms-transform: translateY(-30px);
     -o-transform: translateY(-30px);
+}
+
+/****************************************TEAM SECTION*********************************************/
+
+#team-left .vertical-heading{
+
+    min-height: 160px;
+}
+
+#team-members .team-member 
+{
+   margin: 8px;
+   position: relative;
+}
+
+.team-member .team-member-overlay{
+   background:rgba(33, 34, 38,.9);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   opacity: 0;
+   transition:all 0.3s ease-in-out ;
+   -webkit-transition:all 0.3s ease-in-out ;
+   -moz-transition:all 0.3s ease-in-out ;
+   -ms-transition:all 0.3s ease-in-out ;
+   -o-transition:all 0.3s ease-in-out ;
+}
+.team-member-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+}
+.team-member-info h6
+{
+    color: #f4c613;
+    font-size: 16px;
+    margin: 0;
+    
+}
+
+.team-member-info p{
+    color: #fff;
+}
+
+.team-member:hover .team-member-overlay{
+    opacity: 1;
+}
+
+/*******************social icons*********/
+
+ul.social-list
+{
+    padding: 0;
+    margin-top: 20px;
+}
+ul.social-list li{
+    display: inline-block;
+    padding: 0;
+
+}
+ul.social-list li a{
+    display: inline-block;
+    border: 1px solid #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+
+ul.social-list li:nth-child(1) a:hover
+{
+    background: #3b5998;
+    border-color: transparent;
+
+}
+ul.social-list li:nth-child(2) a:hover
+{
+    background: #00aced;
+    border-color: transparent;
+    
+}
+
+ul.social-list li:nth-child(3) a:hover
+{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-color: transparent;  
+}
+
+.owl-theme .owl-nav [class*=owl-] i
+{
+    color: #212226;
+    background:none;
+    margin: 0;
+    font-size: 30px;
+    padding: 5px;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+.owl-theme .owl-nav [class*=owl-] i:hover{
+    padding: 5px;
+    background-color:#f4c613 ;
 }

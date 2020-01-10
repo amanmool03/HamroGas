@@ -82,3 +82,27 @@ function init()
 }
 
 
+
+/*
+   ****************************************Team********************
+*/
+
+// short form for document.ready method which takes all the javascript functions
+
+ $(function()
+ {
+
+    $("#team-members").owlCarousel({
+        items: 2,
+        autoplay: true,
+        smartSpeed: 500,
+        loop: true,
+        autoplayHoverPause:true,
+        nav: true,
+        dots:false,
+        navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
+
+
+    });
+
+ });
