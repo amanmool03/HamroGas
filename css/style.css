@@ -169,6 +169,10 @@ vertical-align: middle;
 
 }
 
+.txt-type{
+    color:#f4c613;
+}
+
 .txt-type > .txt{
     border-right: 0.2rem solid rgb(184, 184, 184);
 }
@@ -259,7 +263,7 @@ vertical-align: middle;
 
 .content-box-md
 {
-    padding: 100px 0px;
+    padding: 50px 0px;
 }
 
 /* Vertical headings */
@@ -289,7 +293,13 @@ vertical-align: middle;
     line-height: 45px;
 }
 
-/* About styling part1*/
+
+/*
+
+About styling part1
+
+*/
+
 #about-right p:first-child{
     margin-bottom: 10px;
 }
@@ -307,11 +317,52 @@ strong{
     font-weight: 600;
 }
 
-/* About styling for part2 */
+/*
+
+About styling for part2
+
+*/
+
+
 #about-02
 {
     background-color: #f4f4f4;
 }
+
+
+.about-title
+{
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-title h3
+{
+    text-transform: uppercase;
+    margin: 15px;
+}
+
+.about-title hr{
+    width: 45px;
+    height: 3px;
+    background-color: #f4c613;
+    margin:  auto;
+    border: none;
+    transition: all 400ms ease-in-out;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+}
+
+.about-title p{
+    font-weight: 350;
+    font-size: 18px;
+    margin-top: 20px;
+   
+}
+
 
 .about-item
 {
@@ -334,12 +385,15 @@ strong{
     -moz-transition: all 400ms ease-in-out;
     -ms-transition: all 400ms ease-in-out;
     -o-transition: all 400ms ease-in-out;
+    color: #46464b;
+    
 }
 
 .about-item h3
 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 10px;    
+    color: #46464b;
 }
 
 .about-item hr{
@@ -357,6 +411,7 @@ strong{
 
 .about-item p{
     margin-top: 20px;
+    font-weight: 350;
 }
 
 /* now hovering ko palo hai guys ahh ha!! */
@@ -366,10 +421,13 @@ strong{
 }
 
 .about-item:hover > hr{
-    background-color:#212226;
+    background-color:#46464b;
 }
 
+
+
 .about-item:hover > i{
+    
     transform: translateY(-30px);
     -webkit-transform: translateY(-30px);
     -moz-transform: translateY(-30px);
