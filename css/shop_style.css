@@ -7,6 +7,9 @@ html {
     font-family: "helvetica neue", sans-serif;
 }
 
+.menu a:hover{
+    color: red;
+}
 .nav {
     border-bottom: 1px solid #EAEAEB;
     text-align: right;
@@ -69,6 +72,10 @@ label {
 }
 
 
+
+form{
+    float: right;
+}
 
 
 
