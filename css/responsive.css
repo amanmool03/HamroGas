@@ -1,0 +1,94 @@
+/* bootstrap ko media queries for responive */
+
+/* large devices haru ko lagi */
+@media (min-width: 1200px){
+
+}
+
+/*medium devices haru medium desktops ko lagi*/
+@media (min-width: 992px) and (max-width: 1199px)
+{
+    #arrow-down {
+     
+        bottom: 300px;
+    }
+
+    .vertical-heading h3{
+        font-size: 30px;
+    }
+    
+}
+
+/* small devices () tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px)
+{
+   /* #home-heading h1{ 
+       font-size: 45px;
+    }
+    #home-text p{
+        font-size: 21px;
+    } */
+    #home-btn a {
+     font-size: 13px;
+    }
+    
+    .vertical-heading h3{
+        font-size: 30px;
+    } 
+
+    #home{
+        height: 70%;
+    }
+    #arrow-down {
+     
+        bottom: 280px;
+    }
+    #curve{
+        top: 80%;
+    }
+
+    #statement h3{
+        font-size: 25px;
+    }
+}
+
+
+/* Extra small devices (phone haru ko lagu) tablets and small desktops */
+@media (max-width: 767px)
+{
+    #home-heading h1{
+        font-size: 25px;
+    }
+    #home-text p{
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+    #home-btn a{
+        font-size: 12px;
+        padding: 12px;
+    }
+    #arrow-down{
+        bottom:120px;
+        font-size: 20px;
+    }
+
+    #home{
+        height: 99%;
+    }
+    #statement h3 {
+        font-size: 16px;
+        line-height:0.5;
+       
+    }
+    #statement .statement-overlay{
+    padding:  30px 0 ;
+    }
+    #curve{
+        top: 77%;
+    }
+    #home-content{
+        margin-top: 100px;
+    }
+}
+
+

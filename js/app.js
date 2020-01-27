@@ -1,7 +1,7 @@
 // preloader
 $(window).on('load', function () {
     $('#status').fadeOut();
-    $('#preloader').delay(300).fadeOut('slow');
+    $('#preloader').delay(100).fadeOut('slow');
 });
 
 //home type writer testing
@@ -89,15 +89,22 @@ $(function () {
         autoplayHoverPause: true,
         nav: true,
         dots: false,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
-
-
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        responsive: {
+            // breakpoint for zero
+            0: {
+                items: 1
+            },
+            // break point for 480 up
+            480: {
+                items: 2
+            }
+        }
     });
-
 });
 
 /*
- ********************************progress bars
+ ********************************progress bars****************************
  */
 
 $(function () {
@@ -106,7 +113,7 @@ $(function () {
         $(".progress-bar").each(function () {
             $(this).animate({
                 width: $(this).attr("aria-valuenow") + "%"
-            }, 1000);
+            });
         });
 
         this.destroy();
@@ -114,4 +121,101 @@ $(function () {
         offset: 'bottom-in-view'
     });
 
+});
+
+
+/**********************************  testomonial section  **************************/
+
+
+$(function () {
+
+    $("#testomanial-slider").owlCarousel({
+        items: 1,
+        autoplay: true,
+        smartSpeed: 500,
+        loop: true,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: false,
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+    });
+
+});
+
+/****************************************Stats section *********************************/
+
+$(function () {
+
+ $(".counter").counterUp({
+    delay: 10,
+    time: 2000
+ });
+
+});
+
+//*******************************************************clients  ***********************************************/
+$(function () {
+    $("#clients-list").owlCarousel({
+        items: 4,
+        autoplay: true,
+        smartSpeed: 500,
+        loop: true,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: false,
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+    });
+});
+
+//////////////////////*****************NAvigation ko lagi***************** */
+
+// show and hide white navigation
+$(function () {
+
+    //   show on page load
+    showHideNav();
+
+    $(window).scroll(function(){
+    //   show on page scroll
+        showHideNav();
+    });
+
+    function showHideNav()
+    {
+         // alert('you scrolled');
+       if($(window).scrollTop() > 50)
+       {
+           //display white nav
+           $('nav').addClass("white-nav-top");
+
+        //    show back to top button
+
+
+        $("#back-to-top").fadeIn();
+
+       }else{
+           //hide white bar
+           $('nav').removeClass("white-nav-top");
+           $("#back-to-top").fadeOut();
+       }
+    }
+});
+
+
+/******************smooth scrolling ko lagi kina bhanne section ko ma chai css ko external use garena bootstraph ra jquery use gareko lay */
+$(function () {
+
+    $('.smooth-scroll').click(function(event){
+        event.preventDefault();
+
+        //get the section id
+
+        var section_id = $(this).attr("href");
+
+        $("html,body").animate({
+            scrollTop: $(section_id).offset().top - 60
+
+        },1250 , "easeInOutExpo");
+    });
+ 
 });
