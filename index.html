@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">
 
+    <!-- Animate css -->
+    <link rel="stylesheet" href="css/animate/animate.css">
+
     <!-- Custom css -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -36,27 +39,49 @@
 
     <!-- header -->
     <header>
-     <nav class="navbar navbar-expand-lg fixed-top" >    
+        
+     <nav class="navbar navbar-expand-lg fixed-top" >   
         <div class="container-fluid ">
             <div class="site-nav-wrapper">
                 <div class="navbar-header">
-                  
+
+                    <!-- mobile menu open button -->
+                    <span id="mobile-nav-open-btn">&#9776;</span>
+
+                    <!-- LOGO -->
                     <a class="navbar-brand smooth-scroll" href="#home">
                         <img src="images/favicon/burn.png" alt="logo">
                     </a>
                 </div>
-        
         <div class="container">
-        <div class="collapse navbar-collapse ">
+        <div class="collapse navbar-collapse" >
           <ul class="nav navbar-nav ">
             <li><a  class="nav-link smooth-scroll" href="#home">Home</a></li>
             <li><a  class="nav-link smooth-scroll" href="#about">About</a></li>
             <li><a  class="nav-link smooth-scroll" href="#team">Team</a></li>
             <li><a  class="nav-link smooth-scroll" href="#services">Services</a></li>
             <li><a class="nav-link smooth-scroll"  href="#contact">Contact</a></li>
+            <li><a class="nav-link "  href="#login">Login</a></li>
           </ul>
         </div>
         </div>
+
+        <!-- mobile menu -->
+        <div id="mobile-nav">
+            <span id="mobile-nav-close-btn">&times;</span>
+            
+            <div id="mobile-nav-content">
+                <ul class="nav">
+                    <li><a  class="nav-link smooth-scroll" href="#home">Home</a></li>
+                    <li><a  class="nav-link smooth-scroll" href="#about">About</a></li>
+                    <li><a  class="nav-link smooth-scroll" href="#team">Team</a></li>
+                    <li><a  class="nav-link smooth-scroll" href="#services">Services</a></li>
+                    <li><a class="nav-link smooth-scroll"  href="#contact">Contact</a></li>
+                    <li><a class="nav-link "  href="#login">Login</a></li>
+                </ul>
+            </div>
+        </div>
+
         </div> 
         </div>
       </nav> 
@@ -96,7 +121,7 @@
                 <div id="home-text">
                     <p>Best Gas Booking support in Nepal</p>
                 </div>
-                <div id="home-heading">
+                <div id="home-heading" class=" ">
                     <h1>HAMRO <span>GAS</span></h1>
                 </div>
                 <div class="home-container">
@@ -518,12 +543,12 @@
                     <!-- services-01 -->
                     <div class="service">
                         <div class="row">
-                            <div class="col-md-2">
+                            <div class="col-md-2 ">
                                 <div class="icon text-right">
                                 <i class="fas fa-expand-arrows-alt"></i>
                             </div>
                         </div>
-                            <div class=" col-md-10">
+                            <div class=" col-md-10 ">
                                 <h5>Feature 01</h5>
                                 <h4>Responsive</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, rerum reprehenderit. </p>
@@ -537,7 +562,7 @@
                        <!-- services-02 -->
                        <div class="service">
                         <div class="row">
-                            <div class="col-md-2">
+                            <div class="col-md-2 ">
                                 <div class="icon text-right">
                                 <i class="fa fa-laptop"></i>
                                 </div>
@@ -555,7 +580,7 @@
                        <!-- services-03 -->
                        <div class="service">
                         <div class="row">
-                            <div class="col-md-2">
+                            <div class="col-md-2  ">
                                 <div class="icon text-right">
                                 <i class="fas fa-paper-plane"></i>
                             </div>
@@ -600,10 +625,10 @@
                         <!-- testomonial 1 -->
                         <div class="testimonial">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6   col-xs-6" >
                                     <h3>Quality Support</h3>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6  col-xs-6">
                                     <div class="stars text-right">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -618,10 +643,10 @@
                                 nostrum! Eaque, commodi voluptatem modi perspiciatis ut ipsa neque. <i class="fas fa-quote-right"></i></p>
                             <div class="author">
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 col-sm-3  col-xs-6">
                                         <img src="images/members/ed.jpg" alt="clients" class="img-fluid img-circle">
                                     </div>
-                                    <div class="com-md-10">
+                                    <div class="col-md-10 col-sm-3 col-xs-6">
                                         <div class="author-name-des">
                                             <p>Aman mool</p>
                                             <p> Web Designer </p>
@@ -634,10 +659,10 @@
                         <!-- testomonial 1 -->
                         <div class="testimonial">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6  col-xs-6">
                                     <h3>Quality Support</h3>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6  col-xs-6 ">
                                     <div class="stars text-right">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -652,10 +677,10 @@
                                 nostrum! Eaque, commodi voluptatem modi perspiciatis ut ipsa neque. <i class="fas fa-quote-right"></i> </p>
                             <div class="author">
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 col-sm-3 col-xs-6">
                                         <img src="images/members/ed.jpg" alt="clients" class="img-fluid img-circle">
                                     </div>
-                                    <div class="com-md-10">
+                                    <div class="col-md-10 col-sm-3 col-xs-6">
                                         <div class="author-name-des">
                                             <p>Aman mool</p>
                                             <p> Web Designer </p>
@@ -668,12 +693,12 @@
                         <!-- testomonial 1 -->
                         <div class="testimonial">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6  col-xs-6">
 
                                     <h3>Quality Support</h3>
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
                                     <div class="stars text-right">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -689,10 +714,10 @@
 
                             <div class="author">
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 col-sm-3 col-xs-6">
                                         <img src="images/members/ed.jpg" alt="clients" class="img-fluid img-circle">
                                     </div>
-                                    <div class="com-md-10">
+                                    <div class="col-md-10 col-sm-3  col-xs-6">
                                         <div class="author-name-des">
                                             <p>Aman mool</p>
                                             <p>Desinger</p>
@@ -728,7 +753,7 @@
                  </div>
 
                  <div class="row">
-                     <div class="col-md-3">
+                     <div class="col-md-3 col-sm-6">
 
                         <!-- stat item 1 -->
                         <div class="stats-item text-center">
@@ -739,7 +764,7 @@
 
                         
                      </div>
-                     <div class="col-md-3">
+                     <div class="col-md-3 col-sm-6">
                          <!-- stat item 1 -->
                         <div class="stats-item text-center">
                             <i class="fas fa-parachute-box"></i>
@@ -748,7 +773,7 @@
                         </div>
 
                      </div>
-                     <div class="col-md-3">
+                     <div class="col-md-3 col-sm-6">
                          <!-- stat item 1 -->
                         <div class="stats-item text-center">
                             <i class="fas fa-users"></i>
@@ -758,7 +783,7 @@
 
                      </div>
 
-                     <div class="col-md-3">
+                     <div class="col-md-3 col-sm-6">
                         <!-- stat item 4 -->
                        <div class="stats-item text-center">
                            <i class="fas fa-eye"></i>
@@ -804,7 +829,7 @@
                             </div>
                                <!-- client 3 -->
                                <div class="client">
-                                <img src="images/clients/3.png" class="img-fluid" alt="clients" style="margin-left: 30px;"> 
+                                <img src="images/clients/3.png" class="img-fluid exception" alt="clients" > 
                             </div>
                         
 
@@ -836,7 +861,7 @@
 
                                <div id="offices">
                                    <div class="row">
-                                       <div class="col-md-6">
+                                       <div class="col-md-6 col-sm-6">
                                            
                                         <div class="office">
                                             <h5>Bhaktapur</h5>
@@ -849,7 +874,7 @@
 
                                        </div>
 
-                                       <div class="col-md-6">
+                                       <div class="col-md-6 col-sm-6">
                                            
                                         <div class="office">
                                             <h5>Kathmandu</h5>
@@ -967,6 +992,8 @@
     <script src="js/counter/jquery.counterup.min.js"></script>  
     <!-- easing -->
     <script src="js/easing/jquery.easing.1.3.js"></script>
+    <!-- wow Js -->
+    <script src="js/wow/wow.min.js"></script>
     <!-- customJs -->
     <script src="js/app.js"></script></script>
 

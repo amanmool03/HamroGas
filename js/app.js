@@ -219,3 +219,33 @@ $(function () {
     });
  
 });
+
+
+//******************************** */ MObile Menu*************/
+
+$(function () {
+//show mobile navigation
+
+$("#mobile-nav-open-btn").click(function(){
+    $("#mobile-nav").css("top","0%");
+});
+ 
+
+//hide mobile navigation
+
+$("#mobile-nav-close-btn , #mobile-nav a").click(function(){
+    $("#mobile-nav").css("top","-100%");
+});
+ 
+
+});
+
+//*********************************************** */ Animations ko lagi*************************/
+//to reveal the animation on scrolling
+$(function(){
+    new WOW().init();
+});
+
+$(window).on('load', function () {
+  $("#home-heading").addClass(" animated fadeInDown");
+});
