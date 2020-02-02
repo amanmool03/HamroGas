@@ -44,11 +44,11 @@
   </head>
 
   <body>
-    <div class="popupalert">
+    <div class="popupalert" style="display: block;">
       <div class="pop">
-      <!-- <img src="../images/logoLight.JPG" alt="advertise ho hai" /> -->
-      <button class="close">X</button>
-    </div>
+        <!-- <img src="../images/logoLight.JPG" alt="advertise ho hai" /> -->
+        <button class="close">X</button>
+      </div>
     </div>
     <header>
       <div class="container">
@@ -180,6 +180,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -195,5 +196,18 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Advertisement Css-->
+    <script src="../js/shop.js"></script>
+    <!-- <script>
+      // $(document).ready(function() {
+      //   setTimeout(function() {
+      //     $("#popupalert").css("display", "block");
+      //   }, 1000);
+      // });
+      $(".close").click(function() {
+        $(".popupalert").css("display", "none");
+      });
+    </script> -->
   </body>
 </html>
