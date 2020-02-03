@@ -26,8 +26,8 @@
   color: white;
   margin-right: 1%;
 }
-@media only screen and (max-width: 929px) {
-  .pop {
-    display: none;
+@media only screen and (max-width: 900px) {
+  .popupalert {
+    display: none !important;
   }
 }
