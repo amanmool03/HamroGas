@@ -68,7 +68,7 @@
             <li><a  class="nav-link smooth-scroll" href="#team">Team</a></li>
             <li><a  class="nav-link smooth-scroll" href="#services">Services</a></li>
             <li><a class="nav-link smooth-scroll"  href="#contact">Contact</a></li>
-            <li><a class="nav-link "  href="#login">Login</a></li>
+            <li><a class="nav-link "  href="php/login/signIn.php">Login</a></li>
           </ul>
         </div>
         </div>
@@ -84,7 +84,7 @@
                     <li><a  class="nav-link smooth-scroll" href="#team">Team</a></li>
                     <li><a  class="nav-link smooth-scroll" href="#services">Services</a></li>
                     <li><a class="nav-link smooth-scroll"  href="#contact">Contact</a></li>
-                    <li><a class="nav-link "  href="#login">Login</a></li>
+                    <li><a class="nav-link "  href="php/login/signIn.php">Login</a></li>
                     
                     
                 </ul>
@@ -138,7 +138,7 @@
                             data-words='["Online support","Delivery help"]'></span></h1>
                 </div>
                 <div id="home-btn">
-                    <a href="#">
+                    <a href="shop.html">
                         <span></span>
                         <span></span>
                         <span></span>

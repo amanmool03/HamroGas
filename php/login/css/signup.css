@@ -1,0 +1,78 @@
+.wave{
+	bottom: 0;
+	left: 0;
+}
+
+.wave1{
+	position: fixed;
+	top: -390px;
+	right: 0;
+	height: 100%;
+	z-index: -1;
+	transform: rotate(20deg);
+	transform: scale(-1,-1);
+	
+}
+
+.img{
+	justify-content: flex-end;
+	padding-top:40px;
+	padding-right: 20px;
+}
+
+
+
+.login-content{
+	justify-content: flex-start;
+}
+
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  position: relative;
+  padding: 0%;
+  display:none;
+  text-align: left;
+  color: #d9d9d9;
+}
+
+#message h4{
+  font-weight: 600;
+}
+
+#message div{
+  padding: 1px;
+  margin: 0% 10%;
+  font-size: 14px;
+  border-bottom: 2px solid lightgrey;
+  font-family: "poppins",sans-serif;
+
+ 
+
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+.valid:before {
+  position: relative;
+  left: -5px;
+  font-family: FontAwesome;
+  content: "\f00c";
+
+  }
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -5px;
+  font-family: FontAwesome;
+  content: "\f00d";
+}
+
+
