@@ -82,9 +82,9 @@ section {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
-
 }
+
+
 
 
 /*
@@ -154,8 +154,8 @@ section {
 
     height: 100%;
     width: 100%;
-
 } 
+
 
 
 
@@ -194,7 +194,6 @@ section {
     font-weight:300;
     margin-bottom: 15;
     /* text-shadow: 3px 3px 10px #000; */
-
 }
 
 /*
@@ -203,12 +202,11 @@ section {
 
 */
 
-
 /*
  new noen button style 
  HOME BUTTON ONLY
-
  */
+ 
 #home-btn a {
     font-family: "Raleway", sans-serif;
     position: relative;
@@ -1142,6 +1140,7 @@ footer{
 footer p{
     color: #fff;
     line-height: 20px;
+    margin-bottom: 20px;
 }
 
 footer p span{
@@ -1151,6 +1150,19 @@ footer p span{
 
 
 /***********************NAvgation****************/
+
+/* Dark mpde sun */
+
+.DM{
+    cursor: pointer;
+    height: 33px !important;
+    position: absolute;
+    right: -2%;
+    top: 6px;
+    
+
+}
+
 
 .navbar
 {
@@ -1230,6 +1242,26 @@ ul.navbar-nav > li > a:focus{
     color: #f4c613;
 }
 
+
+/************************************** Animation ko lagi **************************************/
+#home-text,#home-heading,.home-container{
+    animation-duration: .5s;
+}
+#home-text{  
+    animation-delay:0.5s; 
+}
+#home-heading {
+    animation-delay:0.8s; 
+}
+
+.home-container{
+    animation-delay:1.3s; 
+}
+
+#arrow-down i{
+    animation-duration:1.5s;
+    animation-delay: 1s;
+}
 
 
 /* #home

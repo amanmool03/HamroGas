@@ -17,8 +17,8 @@
     cursor: pointer;
     z-index: 2;
     position: absolute;
-    right: 20px;
-    top: 6px;
+    right: 50px;
+    top: 0px;
     /* hide nav */
     display: none;
 

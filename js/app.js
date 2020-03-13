@@ -248,4 +248,8 @@ $(function(){
 
 $(window).on('load', function () {
   $("#home-heading").addClass(" animated fadeInDown");
+  $("#home-text").addClass(" animated fadeInDown");
+  $(".home-container").addClass(" animated fadeInDown");
+  $("#home-btn").addClass(" animated zoomIn");
+  $("#arrow-down i").addClass(" animated fadeInDown infinite");
 });
