@@ -1,7 +1,6 @@
 
+
 <?php include("include/header.php"); ?>
-
-
 
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
@@ -71,11 +70,11 @@
                   </button>
 
                   <div class="dropdown-container" >
-                     <a href="add_deliveryStaff.php">
+                     <a href="add_cars.php">
                       <span class="icon"><i class="fas fa-plus"></i></span>     
                       <span class="list">Add</span>
                     </a>
-                      <a href="manage_deliveryStaff.php" >
+                      <a href="manage_cars.php" >
                         <span class="icon"><i class="fas fa-cog"></i></span> 
                         <span class="list">Manage</span>
                       </a>
@@ -132,17 +131,17 @@
           </div>
       </div>
 
-         <div class="container">
+      <div class="container">
 
 <nav aria-label="breadcrumb" style="margin-bottom: 25px;">
   <ol class="breadcrumb" style="background-color: #dce1e9;">
-    <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
+    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
     <li class="breadcrumb-item active" aria-current="page">All Messages</li>
   </ol>
 </nav>
 
-      <div class="row justify-content-center " >
-      <table class="table table-bordered table-striped table-hover">
+      <div class="row justify-content-center ">
+      <table class="table table-bordered table-striped table-hover w-100">
         <thead class="thead-dark">
           <tr>
             <th scope="col">S.N</th>
@@ -168,7 +167,7 @@
             <td><?php echo $main_result['cr_date']; ?></td>
          <!--    <td><a href="delete.php?id=<?php// echo($main_result['id']);?>" class="text-danger"><i
                   class="fas fa-trash-alt"></i></a></td> -->
-                <td align="center"><a onclick="confirm(<?php echo($main_result['id']);?>);" style="cursor: pointer; color:#dd3e4e;"><i class="fas fa-trash-alt"></i></a></td>      
+                <td><a onclick="confirm(<?php echo($main_result['id']);?>);" style="cursor: pointer; color:#dd3e4e;"><i class="fas fa-trash-alt"></i></a></td>      
           </tr>
           <?php } ?>
         </tbody>
@@ -185,9 +184,21 @@
 
  <?= include("include/footer.php");?>
 
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css"/>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 
 
+    <script type="text/javascript">
+      $(document).ready(function()
+      {
+        $('table').DataTable();
+      });
+    </script>
 
-
-
-
+<style type="text/css">
+  #DataTables_Table_0_wrapper{
+    width: 100% !important;
+    cursor: pointer;
+  }
+</style>

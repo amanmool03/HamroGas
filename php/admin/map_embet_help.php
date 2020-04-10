@@ -1,43 +1,6 @@
 
 <?php include("include/header.php"); ?>
 
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
- <script type="text/javascript">
-    function confirm(id1){
-
-              Swal.fire({
-                  title: 'Are you sure?',
-                  text: "Do you sure want to go to Delete this message??",
-                  icon: 'warning',
-                  showCancelButton: true,
-                  confirmButtonColor: '#3085d6',
-                  cancelButtonColor: '#d33',
-                  confirmButtonText: 'Yes, Delete now'
-                }).then((result) => {
-                  if (result.value) {     
-                    Swal.fire(
-                          'Deleted!',
-                          'Your file has been deleted.',
-                          'success'
-                        ) .then((result) => {
-                                if (result.value) {
-                                 // 
-                                 window.location.href = "delete.php"+"?mask="+id1;
-                                }
-                                 // 
-                                })    
-                        
-                  }
-                 
-                })
-
-    }
-  </script>
-
-
   <div class="main_body"> 
     <div class="sidebar_menu">
           <div class="inner__sidebar_menu">
@@ -89,14 +52,14 @@
                     
                   </button>
 
-                  <div class="dropdown-container" style="display: inline-block; width: 100%;">
-                     <a href="displayMessage.php" style="background: #5343c7; padding:10px 35px; color: #fff;" >
+                  <div class="dropdown-container activated"  >
+                     <a href="displayMessage.php" >
                       <span class="icon"><i class="far fa-comments"></i></span>     
                       <span class="list">All messages</span>
                     </a>
-                      <a href="unseenmsg.php">
+                      <a href="unseenmsg.php"  >
                         <span class="icon"><i class="fas fa-cog"></i></span> 
-                        <span class="list">Unseen Messages</span>
+                        <span class="list">Unseen Message</span>
                       </a>
                   </div>
               </li>
@@ -113,7 +76,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="map.php" style="background: #5343c7; padding:10px 35px; color: #fff;"> 
                   <span class="icon"><i class="fas fa-map-marked-alt"></i></span>
                   <span class="list">Maps</span>
                 </a>
@@ -132,62 +95,31 @@
           </div>
       </div>
 
-         <div class="container">
+ <div class="container">
 
-<nav aria-label="breadcrumb" style="margin-bottom: 25px;">
-  <ol class="breadcrumb" style="background-color: #dce1e9;">
-    <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-    <li class="breadcrumb-item active" aria-current="page">All Messages</li>
-  </ol>
-</nav>
+  <h1> Guide to embet the MAP</h1>
 
-      <div class="row justify-content-center " >
-      <table class="table table-bordered table-striped table-hover">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">S.N</th>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Message</th>
-            <th scope="col">Date</th>
-            <th scope="col">Edit</th>
-          </tr>
-        </thead>
-        <tbody>
-          <?php 
-      $sn=1;
-     $sql = mysqli_query($conn,"SELECT * FROM message");
-     while($main_result = mysqli_fetch_assoc($sql))
-     {
-     ?>
-          <tr>
-            <th scope="row"><?php echo $sn++; ?></th>
-            <td><?php echo $main_result['name']; ?></td>
-            <td><?php echo $main_result['email']; ?></td>
-            <td><?php echo $main_result['message']; ?></td>
-            <td><?php echo $main_result['cr_date']; ?></td>
-         <!--    <td><a href="delete.php?id=<?php// echo($main_result['id']);?>" class="text-danger"><i
-                  class="fas fa-trash-alt"></i></a></td> -->
-                <td align="center"><a onclick="confirm(<?php echo($main_result['id']);?>);" style="cursor: pointer; color:#dd3e4e;"><i class="fas fa-trash-alt"></i></a></td>      
-          </tr>
-          <?php } ?>
-        </tbody>
-      </table>
+  <h4 style="font-weight: 200; margin-bottom: 25px;">&#8594; The map can be embeded using following steps:</h4>
 
+  <p style="font-size: 18px; margin: 2px; margin-left: 50px;">
+    1) Go to the link given <a href="https://www.google.com/maps/place/Khwopa+College+of+Engineering/@27.6709867,85.4370554,17z/data=!3m1!4b1!4m5!3m4!1s0x39eb055304880d2f:0x6bcd40f73cac409!8m2!3d27.670982!4d85.4392441"> click here!! </a>to go to the google map link.
+  </p>
+    <p style="font-size: 18px; margin-left: 50px; ">
+    2) Search for the location and click on the share button as in the fig,
+    <img src="images/help1.png" style="height: 400px; width: 60%; margin-top:10px;">
+  </p>
+      <p style="font-size: 18px;  margin-left: 50px;">
+    3) Click on the embet option and copy only the http link as in fig and paste it in.
+    <img src="images/help2.jpg" style="height: 400px; width: 60%; margin-top:10px;">
+  </p>
+   
+ </div>
 
-    </div>
-
-
-      </div>
   </div>
 </div>
   
 
- <?= include("include/footer.php");?>
-
-
-
-
+<?= include("include/footer.php");?>
 
 
 

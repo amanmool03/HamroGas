@@ -49,7 +49,7 @@ if(isset($_POST['add_deliveryBoy'])){
 
 // echo "$u.$p";exit();
 
-	$sql = "SELECT * FROM `delivery_boy` WHERE (`username`='$u') AND `password`='$p' AND `status`=1 AND `is_verified`=1;";
+	$sql = "SELECT * FROM `admin` WHERE (`username`='$u') AND `password`='$p' AND `status`=1 AND `is_verified`=1;";
 	//echo $sql;
 	require_once('../admin/Connection.php');
 	$result = mysqli_query($conn, $sql);
@@ -68,34 +68,40 @@ if(isset($_POST['add_deliveryBoy'])){
 					setcookie ("member_login","");
 				}
 			}
-		
-    		if($row['user_type']=="admin")
-   			 {
-    			echo "<script>confirm();</script>";
-    			echo "<script>window.location='../admin/index.php';</script>";
-   			 }
-        
-          else
-    		{
-					echo "<script>Swal.fire(
-            'Good job!',
-            'Message send succesfully',
-            'success'
-          ).then((result) => {
-            if (result.value) {
-             // 
-              window.location.href = ('../admin/index.php');
-            }
-             // 
-            })
-      </script>";
-			}		
-       		
+	
+    			// echo "<script>sucess();</script>";
+    			// echo "<script>window.location='../admin/index.php';</script>";
+
+      // echo "<script>alert('message send succesfully');</script>";
+        echo "<script>Swal.fire(
+                'Good job!',
+                'Logged in succesfully',
+                'success'
+              ).then((result) => {
+                if (result.value) {
+                 // 
+                  window.location.href = ('../admin/index.php');
+                }
+                 // 
+                })
+          </script>";  		
 	}
 	else{
-		echo "<script>alert('Username or Password Incorrect!');</script>";
-		echo "<script>window.location='signIn.php';</script>";
-		exit;
+		// echo "<script>alert('Username or Password Incorrect!');</script>";
+		// echo "<script>window.location='admin_signIn.php';</script>";
+      echo"<script> Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong!',
+        footer:  mysqli_error($conn);
+        }).then((result) => {
+        if (result.value) {
+         // 
+          window.location.href = ('admin_signIn.php');
+        }
+         // 
+        })</script>";
+	
 	}
 
 
@@ -116,7 +122,7 @@ if(isset($_POST['add_deliveryBoy'])){
            		   </div>
            		   <div class="div">
            		   		<h5>Username</h5>
-           		   		<input type="text" class="input"  required="" name="username">
+           		   		<input type="text" class="input"  required="" name="username" autocomplete="off">
            		   </div>
            		</div>
            		<div class="input-div pass">

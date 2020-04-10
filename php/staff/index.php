@@ -4,7 +4,7 @@ if(empty($_SESSION)) // if the session not yet started
    session_start();
 
 if(!isset($_SESSION['username'])) { 
-  echo "<script>window.location='../login/admin_signIn.php';</script>";
+  echo "<script>window.location='../login/staff_signIn.php';</script>";
   exit;
 }
 ?>
@@ -17,7 +17,7 @@ include("include/header.php");
 <style type="text/css">
     .night
     {
-      background: url("images/star_night.jpg") !important;
+      background: url("images/night.jpg") !important;
       background-position: center!important;
       background-repeat: no-repeat!important;
       background-size: cover!important;
@@ -138,16 +138,10 @@ include("include/header.php");
           
             <?php
 
-              $conn = mysqli_connect("localhost","root","","notify"); 
+              $conn = mysqli_connect("localhost","root","","graphs"); 
 
-          $sql1= "SELECT * FROM `view_stats`";
-          $result1 = mysqli_query($conn,$sql1);
-          $total = mysqli_num_rows($result1);
-          $total = $total - 7;
-          if($total<0){$total=0;}
-  
-          // $sql = "SELECT * FROM `view_stats` order by id desc LIMIT $total,7";
-          $sql = "SELECT * FROM `view_stats` LIMIT $total,7";
+
+              $sql = "SELECT * FROM `view_stats` order by id desc LIMIT 0,10";
 
               $result = mysqli_query($conn,$sql);
 
@@ -170,23 +164,12 @@ include("include/header.php");
         ]);
 
         var options = {
-
           title: 'Company Performance',
           pointSize: 10,
-          // dataOpacity:0.5,
           colors: ['#1f975b'],
           curveType: 'function',
           legend: { position: 'bottom' },
-          animation: {
-            duration:1000,
-            easing:'inAndOut',
-            startup:true
-          },
-          chartArea: {
-            left:'8%',
-            width:'90%',
-          },
-        
+
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
@@ -213,68 +196,14 @@ include("include/header.php");
                   <span class="list">Charts</span>
                 </a>
               </li>
+
               <li>
                 <a href="#">
-                  <span class="icon"><i class="fas fa-address-book"></i></span>
-                  <span class="list">Contact</span>
-                </a>
-              </li>
-              <li>
-                 <button class="dropdown-btn" >   
-                    <span class="icon"><i class="fas fa-truck-loading"></i></span>
-                    <span class="list">Delivery staff</span>
-                    <span class="down"><i class="fa fa-caret-down"></i></span>
-                    
-                  </button>
-
-                  <div class="dropdown-container" >
-                     <a href="add_deliveryStaff.php">
-                      <span class="icon"><i class="fas fa-plus"></i></span>     
-                      <span class="list">Add</span>
-                    </a>
-                      <a href="manage_deliveryStaff.php" >
-                        <span class="icon"><i class="fas fa-cog"></i></span> 
-                        <span class="list">Manage</span>
-                      </a>
-                  </div>
-              </li>
-                   <li>
-                 <button class="dropdown-btn" >   
-                    <span class="icon"><i class="far fa-comments"></i></span>
-                    <span class="list">Message</span>
-                    <span class="down"><i class="fa fa-caret-down"></i></span>
-                    
-                  </button>
-
-                  <div class="dropdown-container" >
-                     <a href="displayMessage.php">
-                      <span class="icon"><i class="far fa-comments"></i></span>     
-                      <span class="list">All messages</span>
-                    </a>
-                      <a href="unseenmsg.php" >
-                        <span class="icon"><i class="fas fa-cog"></i></span> 
-                        <span class="list">Unseen Messages</span>
-                      </a>
-                  </div>
-              </li>
-              <li>
-                <a href="about.php">
                   <span class="icon"><i class="fas fa-address-card"></i></span>
                   <span class="list">About</span>
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  <span class="icon"><i class="fab fa-blogger"></i></span>
-                  <span class="list">Blogs</span>
-                </a>
-              </li>
-              <li>
-                <a href="map.php">
-                  <span class="icon"><i class="fas fa-map-marked-alt"></i></span>
-                  <span class="list">Maps</span>
-                </a>
-              </li>
+         
             </ul>
 
             <div class="hamburger">
@@ -293,9 +222,8 @@ include("include/header.php");
 
         <div class="item_wrap">
           <div class="item" id="weather" style="margin: 0; width: 100%; padding: 30px;">
-            <div id="w_icon"><i class="fas fa-cloud-moon" style="position: absolute; top: 10%; font-size: 46px;"></i></div>
-            <div><p style="margin-left: 65px;"> <span id="greeting"></span></p></div>
-            <div ><h1 style="font-weight: 400; ">Welcome to the Dashboard , <?=ucwords($_SESSION['username']);?></h1></div>
+            <div ><p> <span id="greeting"></span></p></div>
+            <div ><h1 style="font-weight: 400">Welcome to the Dashboard</h1></div>
             <div class="divTime" id="time" style="font-weight: bold"></div>
           </div>
         </div>
@@ -306,7 +234,7 @@ include("include/header.php");
                 
                 <span><i class="fas fa-eye" style="font-size: 50px;"></i></span>
                 <span>
-                  <p style="margin-right: 30px; color: /*#0ebeff*/#1f975bc9; font-size: 18px;">[ VIEWS ]</p>
+                  <p style="margin-right: 30px; color: #0ebeff; font-size: 18px;">[ VIEWS ]</p>
                   <?php 
                     $conn = mysqli_connect('localhost','root','','notify');
 
@@ -335,7 +263,7 @@ include("include/header.php");
              <div class="part">
                 <span><i class="fas fa-users" style="font-size: 50px;"></i></span>
                 <span>
-                  <p style="margin-right: 30px; color: #1f975bc9; font-size: 18px;">[ Staff ] </p>
+                  <p style="margin-right: 30px; color: #0ebeff; font-size: 18px;">[ Staff ] </p>
                   <?php 
                     $conn = mysqli_connect('localhost','root','','notify');
 
@@ -362,7 +290,7 @@ include("include/header.php");
             <div class="part"> 
              <span><i class="fas fa-user-check" style="font-size: 50px;"></i></span>
                 <span>
-                  <p style="margin-right: 0px; color: #1f975bc9; font-size: 18px;">[ Available Staff ]</p>
+                  <p style="margin-right: 0px; color: #0ebeff; font-size: 18px;">[ Available Staff ]</p>
                   <?php 
                     $conn = mysqli_connect('localhost','root','','notify');
 
@@ -386,7 +314,7 @@ include("include/header.php");
             <div class="part">
                 <span><i class="fas fa-eye" style="font-size: 50px;"></i></span>
                 <span>
-                  <p style="margin-right: 30px; color: #1f975bc9; font-size: 18px;">[ VIEWS ]</p>
+                  <p style="margin-right: 30px; color: #0ebeff; font-size: 18px;">[ VIEWS ]</p>
                   <?php 
                     $conn = mysqli_connect('localhost','root','','notify');
 

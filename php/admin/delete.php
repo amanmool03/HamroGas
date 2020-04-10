@@ -1,14 +1,16 @@
 <?php 
 include_once('connection.php');
 
-if(isset($_GET['id']))
+if(isset($_GET['mask']))
 {
-	$delete_id = $_GET['id'];
+	// echo "string";
+	// exit();
+	$delete_id = $_GET['mask'];
 
 	$sql = mysqli_query($conn,"DELETE FROM message WHERE id = '$delete_id'");
 	if($sql)
 	{
-		header('location: read_msg.php');
+		header('location: displayMessage.php');
 	}
 	else
 	{

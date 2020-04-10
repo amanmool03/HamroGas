@@ -1,0 +1,114 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.col-25
+{
+position: relative;
+}
+ #profileDisplay { display: block; height:230px; width: 230px; margin: 25px auto;  margin-top: 40%;}
+ .col-25 .img-placeholder {
+  width: 230px;
+  color: white;
+  height: 100%;
+  background: black;
+  opacity: .7;
+  height: 230px;
+  /*border-radius: 50%;*/
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+  .img-placeholder h4
+  {
+    margin-top: 40%;
+    color: white;
+  } 
+  .img-div:hover > .img-placeholder
+  {
+    display: block;
+    cursor: pointer;
+  }
+
+  .row
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .title
+  {
+    margin-left: 40px;
+  }
+
+  .col-50{
+    flex:50%;
+  }
+  .col-75
+  {
+    flex: 75%;
+  }
+  .col-25
+  {
+    flex:25%;
+  }
+  .col-100
+  {
+    flex: 100%;
+  }
+  .col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+  label
+  {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type=text],input[type=number],input[type=password],input[type=email] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+  
+  .fa
+  {
+    margin-right: 10px;
+  }
+
+  .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  /*margin: 10px 0;*/
+  border: none;
+  width: 96.5%;
+  margin-left: 2%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+  color: white;
+}
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}

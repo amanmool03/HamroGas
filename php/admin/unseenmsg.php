@@ -1,42 +1,15 @@
 
+<?php 
+
+include_once('connection.php');
+if(isset($_GET['id']))
+{
+$main_id = $_GET['id'];
+$sql = mysqli_query($conn,"UPDATE message SET status=1 WHERE id='$main_id'");
+}
+ ?>
+
 <?php include("include/header.php"); ?>
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
- <script type="text/javascript">
-    function confirm(id1){
-
-              Swal.fire({
-                  title: 'Are you sure?',
-                  text: "Do you sure want to go to Delete this message??",
-                  icon: 'warning',
-                  showCancelButton: true,
-                  confirmButtonColor: '#3085d6',
-                  cancelButtonColor: '#d33',
-                  confirmButtonText: 'Yes, Delete now'
-                }).then((result) => {
-                  if (result.value) {     
-                    Swal.fire(
-                          'Deleted!',
-                          'Your file has been deleted.',
-                          'success'
-                        ) .then((result) => {
-                                if (result.value) {
-                                 // 
-                                 window.location.href = "delete.php"+"?mask="+id1;
-                                }
-                                 // 
-                                })    
-                        
-                  }
-                 
-                })
-
-    }
-  </script>
-
 
   <div class="main_body"> 
     <div class="sidebar_menu">
@@ -89,14 +62,14 @@
                     
                   </button>
 
-                  <div class="dropdown-container" style="display: inline-block; width: 100%;">
-                     <a href="displayMessage.php" style="background: #5343c7; padding:10px 35px; color: #fff;" >
+                  <div class="dropdown-container activated" style="display: inline-block; width: 100%;"  >
+                     <a href="displayMessage.php" >
                       <span class="icon"><i class="far fa-comments"></i></span>     
                       <span class="list">All messages</span>
                     </a>
-                      <a href="unseenmsg.php">
+                      <a href="unseenmsg.php" style="background: #5343c7; padding:10px 35px; color: #fff;" >
                         <span class="icon"><i class="fas fa-cog"></i></span> 
-                        <span class="list">Unseen Messages</span>
+                        <span class="list">Unseen Message</span>
                       </a>
                   </div>
               </li>
@@ -132,62 +105,65 @@
           </div>
       </div>
 
-         <div class="container">
+ <div class="container">
 
-<nav aria-label="breadcrumb" style="margin-bottom: 25px;">
+  <!-- breadcrub ko lagi -->
+  <nav aria-label="breadcrumb" style="margin-bottom: 25px;">
   <ol class="breadcrumb" style="background-color: #dce1e9;">
     <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-    <li class="breadcrumb-item active" aria-current="page">All Messages</li>
+    <li class="breadcrumb-item active" aria-current="page">UnSeen Messages</li>
   </ol>
 </nav>
-
-      <div class="row justify-content-center " >
-      <table class="table table-bordered table-striped table-hover">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">S.N</th>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Message</th>
-            <th scope="col">Date</th>
-            <th scope="col">Edit</th>
-          </tr>
-        </thead>
-        <tbody>
-          <?php 
-      $sn=1;
-     $sql = mysqli_query($conn,"SELECT * FROM message");
+<!-- table -->
+  <div class="row justify-content-center">
+  <table class="table table-bordered table-striped table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">S.N</th>
+      <th scope="col">Name</th>
+      <th scope="col">Message</th>
+      <th scope="col">Date</th>
+      <th scope="col">Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php 
+    $sn=1;
+    $sql = mysqli_query($conn,"SELECT * FROM message WHERE status = 0");
+    if(mysqli_num_rows($sql)>0)
+    {
      while($main_result = mysqli_fetch_assoc($sql))
      {
      ?>
-          <tr>
-            <th scope="row"><?php echo $sn++; ?></th>
-            <td><?php echo $main_result['name']; ?></td>
-            <td><?php echo $main_result['email']; ?></td>
-            <td><?php echo $main_result['message']; ?></td>
-            <td><?php echo $main_result['cr_date']; ?></td>
-         <!--    <td><a href="delete.php?id=<?php// echo($main_result['id']);?>" class="text-danger"><i
-                  class="fas fa-trash-alt"></i></a></td> -->
-                <td align="center"><a onclick="confirm(<?php echo($main_result['id']);?>);" style="cursor: pointer; color:#dd3e4e;"><i class="fas fa-trash-alt"></i></a></td>      
-          </tr>
-          <?php } ?>
-        </tbody>
-      </table>
+    <tr>
+      <th  scope="row"><?php echo $sn++; ?></th>
+      <td><?php echo $main_result['name']; ?></td>
+      <td><?php echo $main_result['message']; ?></td>
+      <td><?php echo $main_result['cr_date']; ?></td> 
+      <td align="center"><a href="delete.php?id=<?php echo($main_result['id']);?>" class="text-danger"><i class="fas fa-trash-alt"></i></a></td> 
+    </tr>
+  <?php }
+  }
+  else
+{
+  ?>
+    <tr>
+      <td colspan="5">NO UNSEEN MESSAGES!!!</td>
+    </tr>
+<?php } ?> 
+  </tbody>
+</table>
 
+    
+  </div>
+   
+ </div>
 
-    </div>
-
-
-      </div>
   </div>
 </div>
   
 
- <?= include("include/footer.php");?>
-
-
-
-
+<?= include("include/footer.php");?>
 
 
 

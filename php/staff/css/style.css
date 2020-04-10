@@ -346,7 +346,7 @@ body{
 
 #curve_chart rect
 {
-  width: 85%;
+  width: 80%;
   transition: all ease-in-out 0.3s;
   border-radius: 20px;
 }

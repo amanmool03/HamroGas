@@ -1,3 +1,4 @@
+
 <?php include_once('connection.php'); ?>
 <?php 
 if(isset($_GET['id']))
@@ -6,6 +7,7 @@ $main_id = $_GET['id'];
 $sql = mysqli_query($conn,"UPDATE message SET status=1 WHERE id='$main_id'");
 }
 
+ 
  ?>
 
 <!doctype html>
@@ -41,8 +43,11 @@ $sql = mysqli_query($conn,"UPDATE message SET status=1 WHERE id='$main_id'");
         </thead>
         <tbody>
           <?php 
+       
       $sn=1;
-     $sql = mysqli_query($conn,"SELECT * FROM message WHERE status = 1");
+     $sql = mysqli_query($conn,"SELECT * FROM message WHERE status = 1 AND id='$main_id'");
+     if(mysqli_num_rows($sql)>0)
+     {
      while($main_result = mysqli_fetch_assoc($sql))
      {
      ?>
@@ -54,7 +59,14 @@ $sql = mysqli_query($conn,"UPDATE message SET status=1 WHERE id='$main_id'");
             <td><a href="delete.php?id=<?php echo($main_result['id']);?>" class="text-danger"><i
                   class="fas fa-trash-alt"></i></a></td>
           </tr>
-          <?php } ?>
+          <?php }
+          }
+          else
+          {
+            echo "no messages";
+          }
+
+           ?>
         </tbody>
       </table>
 
