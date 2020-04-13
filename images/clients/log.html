@@ -1,0 +1,176 @@
+<html>
+<head>
+<title>login</title>
+       
+    <style type="text/css">
+          .row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+ /* Should be removed. Only for demonstration */
+ border-right: solid grey 1px;
+}
+           .column img
+           {
+           	/*background-image:url(gas.png);*/
+           	background-color: grey;
+          
+           }
+
+           .content{
+                background:white;
+                width: 100%;
+                height:100%
+                padding:0;
+                margin:0;
+               
+          }
+          .form-box{
+              width: 380px; 
+              height: 480px;
+              position: relative;
+              margin: 6% auto;
+              background: #fff;
+              padding: 5px;
+              overflow: hidden;
+         }
+         .button-box{
+             width: 220px;
+             margin: 35px auto;
+             position: relative;
+             box-shadow: 0 0 20px 9px #ff61241f;
+             border-radius: 30px;
+         }
+         .toggle-btn{
+             padding: 10px 30px;
+             cursor: pointer;
+             background: transparent;
+             border: 0;
+             outline: none;
+             position: relative;
+        }
+        #btn{
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 110px;
+            height: 100%;
+            background: Linear-gradient(to right, #ff105f,#ffad06);
+            border-radius: 30px;
+            transition: .5s;
+
+        }
+        .social-icons{
+          margin: 30px auto;
+          text-align: center;
+        }
+        .social-icons img{
+           width: 30px;
+            margin: 0 12px;
+            box-shadow: 0 0 20px 0 #7f7f7f3d;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        .input-group{
+            top: 180px;
+            position: absolute;
+            width:280px;
+            transition: .5s;
+        }
+        .input-field{
+           width: 100%;
+           padding: 10px 0;
+           margin: 5px 0;
+           border-left:0;
+           border-top: 0;
+           border-right: 0;
+           border-bottom: 1px solid #999;
+           outline: none;
+           background: transparent;
+        }
+        .submit-btn{
+               width: 85%;
+               padding: 10px 30px;
+               cursor: pointer;
+               display: block;
+               margin: auto;
+               background: Linear-gradient(to right, #ff105f,#ffad06);
+               border: 0;
+               outline: none;
+               border-radius: 30px;
+               
+        }
+        .chech-box{
+            margin: 30px 10px 30px 0;
+        }
+        span{
+            color: #777;
+            font-size:12px;
+            bottom:68px;
+            position:absolute;
+         }
+         #Login{
+             left: 50px;
+         }
+         #Register{
+              left: 450px;
+         }
+        
+</style>
+</head>
+<body>
+ <div class="row">
+ 	<div class="column">
+ 		<img src="gas.png" style="float: left; width: 100%; height: 100%;">
+ 	</div>
+ 	<div class="column">
+      <div class="form-box">
+          <div class="button-box">
+              <div id="btn"></div>
+                  <button type="button" class="toggle-btn" onclick="Login()">Login</button>
+                  <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+              </div>
+           <div class="social-icons">
+             <img src="fb.png">
+             <img src="tw.png">
+             <img src="gp.png">
+          </div>
+          <form id="Login" class="input-group">
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="text" class="input-field" placeholdeR="Enter Password" required>
+          <input type="checkbox" class="chech-box"><span>Remember Password</span>
+          <button type="submit" class="submit-btn"><a href="sad.html">Log In</a></button>
+          </form>
+          <form id="Register" class="input-group">
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="email" class="input-field" placeholder="Email Id" required>
+          <input type="text" class="input-field" placeholdeR="Enter Password" required>
+          <input type="checkbox" class="chech-box"><span>I agree to see this webpage</span>
+          <button type="submit" class="submit-btn"><a href="sad.html">Register</a></button>
+          </form>
+      </div>
+ 
+    <script>
+   var x=document.getElementById("Login");
+   var y=document.getElementById("Register");
+   var z=document.getElementById("btn");
+ 
+
+   function Register(){
+       x.style.left="-400px";
+       y.style.left="50px";
+       z.style.left="110px";
+   }
+
+   function Login(){
+       x.style.left="50px";
+       y.style.left="450px";
+       z.style.left="0px";
+   }
+     </script>
+     </body>
+</html>
+

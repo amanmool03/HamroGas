@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada|Ubuntu:400,500,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0 ;
+  list-style: none !important; 
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box !important;
+  text-decoration: none;
+}
+
+body{
+  background: #e8edf5;
+  width: 100%;
+  height: 100%;
+}
+
+.notify i.fas{
+
+  animation: shakeCart 0.3s ease-in-out ;
+  animation-delay: 0.5s;
+  animation-iteration-count: 10;
+  
+}
+
+
+ @keyframes shakeCart {
+   25% {
+     transform: rotate(20deg);
+  }
+   50% {
+     transform: rotate(0deg);
+  }
+   75% {
+     transform: rotate(-20deg);
+  }
+   100% {
+     transform: rotate(0deg);
+  }
+}
+
+
+.wrappers .top_navbar{
+	width: 100%;
+	height: 65px;
+	display: flex;
+	position: fixed;
+  background: #2f2f2f;
+	top: 0;
+}
+
+.wrappers .top_navbar .logo{
+	width: 250px;
+	height: 100%;
+	background: #2f2f2f;
+	border-bottom: 1px solid #2f2f2f;
+}
+
+.wrappers .top_navbar .logo a{
+	display: block;
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+  	font-size: 20px;
+  	color: #fff;
+  	padding: 20px 0;
+}
+
+.wrappers .top_navbar .top_menu{
+	width: calc(100% - 250px);
+	height: 100%;
+	background: #fff;
+    padding: 0 40px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrappers .top_navbar .top_menu .home_link a{
+	display: block;
+    background: #2f2f2f;
+    color: #fff;
+    padding: 8px 15px !important ;
+    border-radius: 3px;
+}
+
+.wrappers .top_navbar .top_menu .home_link a:hover,
+.wrappers .top_navbar .right_info .icon_wrap:hover {
+    background: #2f2f2f;
+}
+
+.wrappers .top_navbar .right_info{
+	display: flex;
+}
+
+.wrappers .top_navbar .right_info .icon_wrap{
+	padding: 8px 15px;
+    border-radius: 3px;
+	background: #2f2f2f;
+    color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.main_body .sidebar_menu{
+	position: fixed;
+  	top: 65px;
+  	left: 0;
+  	background: #2f2f2f;
+  	width: 250px;
+  	height: 100%;
+  	transition: all 0.3s linear;
+}
+
+.main_body .sidebar_menu .inner__sidebar_menu{
+	position: relative;
+	padding-top: 60px ;
+
+}
+
+.main_body .sidebar_menu ul li a{
+  color: #bbb;
+  font-size: 18px;
+  padding: 20px 35px ;
+  display: block;
+  white-space: nowrap;
+}
+
+.main_body .sidebar_menu ul li a .icon{
+  margin-right: 8px;
+}
+
+.main_body .sidebar_menu ul li a span{
+  display: inline-block;
+}
+
+.main_body .sidebar_menu ul li a:hover{
+  background: #5343c7;
+  color: #fff;
+}
+
+.main_body .sidebar_menu ul li a.active{
+  background: #2f2f2f;
+  color: #bbb;
+}
+
+.main_body .sidebar_menu .hamburger{
+  position: absolute;
+  top: 5px;
+  right: -25px;
+  width: 50px;
+  height: 50px;
+  background: #e8edf5;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.main_body .sidebar_menu .inner_hamburger,
+.main_body .sidebar_menu .hamburger .arrow{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.main_body .sidebar_menu .inner_hamburger{
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  background: #3421C0;
+}
+
+.main_body .sidebar_menu .hamburger .arrow{
+  color: #fff;
+  font-size: 20px;
+}
+
+.main_body .sidebar_menu .hamburger  .fa-long-arrow-alt-right{
+  display: none;
+}
+
+.main_body .container{
+	width: calc(100% - 250px);
+	margin-top: 150px !important;
+	margin-left: 250px ;
+	padding: 25px 40px;
+	transition: all 0.3s linear;
+}
+
+.main_body .container .item_wrap{
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.main_body .container .item_wrap .item{
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	padding: 25px;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.main_body .container .item_wrap .item:first-child{
+	margin-right: 20px;
+}
+
+/* after adding active class */
+.wrappers.active .sidebar_menu{
+  width: 80px;
+}
+
+.wrappers.active .hamburger .fa-long-arrow-alt-right{
+  display: block;
+}
+
+.wrappers.active .hamburger .fa-long-arrow-alt-left{
+  display: none;
+}
+
+.wrappers.active .sidebar_menu ul li a .list{
+  display: none;
+}
+
+.wrappers.active .main_body .container{
+  width: calc(100% - 100px);
+  margin-left: 100px;
+}
+
+
+@media screen and ( max-width: 900px) and (min-width: 600px) {
+
+ .main_body .sidebar_menu .hamburger  .fa-long-arrow-alt-right{
+  display: block;
+}
+
+ .wrappers .sidebar_menu{
+  width: 80px;
+}
+
+.wrappers .hamburger .fa-long-arrow-alt-right{
+  display: block;
+}
+
+.wrappers .hamburger .fa-long-arrow-alt-left{
+  display: none;
+}
+
+.wrappers .sidebar_menu ul li a .list{
+  display: none;
+}
+
+.wrappers .main_body .container{
+  width: calc(100% - 100px);
+  margin-left: 100px;
+}
+
+
+
+/* after adding active class */
+.wrappers.active .sidebar_menu{
+  width: 250px;
+
+}
+
+.wrappers.active .hamburger .fa-long-arrow-alt-right{
+  display: none;
+}
+
+.wrappers.active .hamburger .fa-long-arrow-alt-left{
+  display: block;
+}
+
+.wrappers.active .sidebar_menu ul li a .list{
+  display: inline-block;
+}
+
+.wrappers.active .main_body .container{
+  width: calc(100% - 100px);
+  margin-left: 100px;
+}
+
+}
+
+
+@media screen and (max-width:600px)
+{
+
+  .main_body .sidebar_menu{
+    width: 100vw;
+    display: none; 
+     cursor: pointer;
+   
+
+}
+
+.sidebar_menu.visible {
+  display: block;
+  transition: all 1s linear;
+
+
+}
+.hamburger 
+{
+  display: none;
+}
+
+.nav-trigger {
+  position: relative;
+  float: right;
+  width: 20px;
+  height: 44px;
+  right: 30px;
+  display: block; 
+   transition: all 0.3s linear;
+}
+.nav-trigger span, .nav-trigger span:before, span:after {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+}
+.nav-trigger span {
+  top: 65%;
+
+}
+.nav-trigger span:before, .nav-trigger span:after {
+  content: '';
+}
+.nav-trigger span:before {
+  top: -6px;
+}
+.nav-trigger span:after {
+  top: 6px;
+}
+
+.top_navbar .top_menu
+{
+  display: none!important;
+}
+
+.wrappers .top_navbar .logo {
+    width: 100%;
+   
+}
+.top_navbar{
+  background-color: #2f2f2f;
+}
+
+.main_body .sidebar_menu{
+  text-align: center;
+}
+
+.wrappers .main_body .container{
+  width: 100vw;
+  margin: 50px 0px;
+}
+}
+
+/*notification ko lagi*/
+.notify #count{
+  border-radius: 50%;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+
+#center
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+

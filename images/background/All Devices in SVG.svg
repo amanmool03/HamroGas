@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://codepen.io/chrisgannon/pen/WvJMXP -->
+<html lang="en" class="pc chrome79 js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>All Devices in SVG</title>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@CodePen">
+<meta name="twitter:title" content="All Devices in SVG">
+<meta name="twitter:description" content="A morphing animation to represent different devices. If you like this you can buy it [here](https://gannon.tv/products/morphing-devices)...">
+<meta name="twitter:image" content="https://screenshot.codepen.io/35984.WvJMXP.43031d09-4550-4d6c-82e1-d3dc8006a632.png">
+<meta name="twitter:creator" content="@chrisgannon">
+<meta property="og:image" content="https://codepen.io/chrisgannon/pen/WvJMXP/image/large.png" itemprop="thumbnailUrl">
+<meta property="og:title" content="All Devices in SVG">
+<meta property="og:url" content="https://codepen.io/chrisgannon/details/WvJMXP">
+<meta property="og:site_name" content="CodePen">
+<meta property="og:description" content="A morphing animation to represent different devices. If you like this you can buy it [here](https://gannon.tv/products/morphing-devices)...">
+<link rel="alternate" type="application/json+oembed" href="https://codepen.io/api/oembed?url=https://codepen.io/chrisgannon/pen/WvJMXP&amp;format=json" title="All Devices in SVG">
+<link href="./All Devices in SVG_files/css" rel="stylesheet">
+<link rel="stylesheet" media="all" href="./All Devices in SVG_files/global-d036fc104473b5fd51a687e65136215599e07e36485e603799123b987cf7b65a.css">
+<link rel="stylesheet" media="screen" href="./All Devices in SVG_files/3-4045abb6.chunk.css">
+<link rel="stylesheet" media="screen" href="./All Devices in SVG_files/everypage-356b33a0.css">
+<link rel="stylesheet" media="all" href="./All Devices in SVG_files/editor-cc3e4b109ef65ccba13cc1dac7186dcf6d74272a9b68b71a3ed1f2715443cbf0.css">
+<meta name="description" content="A morphing animation to represent different devices. If you like this you can buy it [here](https://gannon.tv/products/morphing-devices)...">
+<link rel="stylesheet" media="screen" href="./All Devices in SVG_files/twilight-1384711dde26dace772d921a7aec83b44bfe4bfda4f990cf1c049737be68ea70.css" id="cm-theme">
+<style id="cm-font-family" class="cm-font-family">
+  
+  .CodeMirror,
+  .console-logs .console-line,
+  .console-command-line-input,
+  .console-message,
+  .CodeMirror-hint {
+    font-family: Monaco, MonoSpace;
+  }
+</style>
+<style id="cm-font-size">
+  .CodeMirror,
+  .console-logs .console-line,
+  .console-command-line-input,
+  .console-message,
+  .CodeMirror-hint {
+    font-size: 14px;
+  }
+</style>
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<script async="" src="./All Devices in SVG_files/js"></script>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="PWbRuEEPIDcOi6MtaIA6Hy5zEDIp+M0Sty9/Xv48fuVutk5fwUnARX8ImoIp4har4TellR1JFmOo/4vd2YhGWA==">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script>/* Firefox needs this to prevent FOUC. */</script><script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script>
+</head>
+<body class="room-editor editor state-htmlOn-cssOn-jsOn sidebar-false   layout-top  logged-out">
+<header class="main-header" id="main-header"><div class="header-wrap ItemHeader_headerWrap-2WdNj"><h1 class="Logo_root-3XNFn" data-test-id="logo"><a href="https://codepen.io/" class="Logo_small-3i6l6"><svg width="20" height="20" class=" icon icon-codepen-box"><use xlink:href="/svg_sprite?v=8885a907#codepen-box"></use></svg><span class="screen-reader-text">CodePen Home</span></a><a href="https://codepen.io/" class="Logo_large-3FckA"><svg width="20" height="20" class=" icon icon-logo" title="CodePen"><use xlink:href="/svg_sprite?v=8885a907#logo"></use></svg><span class="screen-reader-text">CodePen Home</span></a></h1><div class="ItemTitle_root-3FqLB" data-test-id="item-title-area"><div class="ItemTitle_text-2ho1f"><h1 class="ItemTitle_title-3OkGi" id="item-title"><a href="https://codepen.io/chrisgannon/pen/WvJMXP" class="ItemTitle_titleLink-mr9H4" id="editable-title-span" title="All Devices in SVG">All Devices in SVG</a></h1><div class="ItemTitle_by-24dz8" data-test="AnItemBy">A Pen By <a class="ItemTitle_ownerLink-tMhWC" href="https://codepen.io/chrisgannon">Chris Gannon <span class="badge badge-pro" data-test-id="pro-badge">PRO</span></a></div></div></div><div class="navigation-wrap editor-actions-menu"><button class="footer-button invisible-button " aria-expanded="false"><div class="toggle-actions-button" aria-hidden="true"><span></span><svg width="20" height="20" class=" icon icon-arrow-down-mini"><use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use></svg></div><span class="screen-reader-text">Pen Editor Menu</span></button><div class="editor-actions" data-expanded="false" aria-hidden="true"><button class="button loves heart-button button-editor-outline loved-null" data-item="PEN" data-hashid="WvJMXP" title="Love"><span class="screen-reader-text">Love</span><svg width="16" height="16" class=" icon icon-heart"><use xlink:href="/svg_sprite?v=8885a907#heart"></use></svg></button><button id="run" title="Com/Ctrl - Shift - 7 to Run" class="button icon-button button-editor-outline run"><svg width="20" height="20" class=" icon icon-rerun"><use xlink:href="/svg_sprite?v=8885a907#rerun"></use></svg><span class="label">Run</span></button><button data-test-id="fork-button" title="Fork this Pen" class="button icon-button button-editor-outline fork-button"><svg width="20" height="20" class=" icon icon-branch"><use xlink:href="/svg_sprite?v=8885a907#branch"></use></svg><span class="label">Fork</span></button><button id="edit-settings" data-test-id="edit-settings" title="Pen Settings" class="button icon-button button-editor-solid"><svg width="20" height="20" class=" icon icon-gear"><use xlink:href="/svg_sprite?v=8885a907#gear"></use></svg><span class="label">Settings</span></button><button id="view-switcher-button" data-test-id="view-switcher-button" title="Change View" class="button icon-button button button-editor-solid view-switcher-button"><svg width="20" height="20" class=" icon icon-viewswitcher"><use xlink:href="/svg_sprite?v=8885a907#viewswitcher"></use></svg><span class="label">Change View</span></button><div class="view-switcher" style="left: 990.013px;"><div class="ViewSwitcher_switch-1Ih20"><h3>Open this Pen in:</h3><nav class="link-list"><a id="pen-link" href="https://codepen.io/chrisgannon/pen/WvJMXP" class="view-switcher-row editor-link pen-link active">Editor View<span class="view-meta">/pen/<span data-href="https://blog.codepen.io/documentation/views/editor-view/" class="learn-more inline-q"><svg width="13" height="13" class=" icon icon-help"><use xlink:href="/svg_sprite?v=8885a907#help"></use></svg></span></span></a><a id="details-link" href="https://codepen.io/chrisgannon/details/WvJMXP" class="view-switcher-row editor-link details-link">Details View<span class="view-meta">/details/<span data-href="https://blog.codepen.io/documentation/views/details-view/" class="learn-more inline-q"><svg width="13" height="13" class=" icon icon-help"><use xlink:href="/svg_sprite?v=8885a907#help"></use></svg></span></span></a><a id="full-link" href="https://codepen.io/chrisgannon/full/WvJMXP" class="view-switcher-row editor-link full-link">Full Page View<span class="view-meta">/full/<span data-href="https://blog.codepen.io/documentation/views/full-page-view/" class="learn-more inline-q"><svg width="13" height="13" class=" icon icon-help"><use xlink:href="/svg_sprite?v=8885a907#help"></use></svg></span></span></a></nav></div><div class="ViewSwitcher_switch-1Ih20"><h3>Direct Code Links:</h3><div class="share-static share-section"><a target="_blank" rel="noopener noreferrer" href="https://codepen.io/chrisgannon/pen/WvJMXP.html">.html</a><a target="_blank" rel="noopener noreferrer" href="https://codepen.io/chrisgannon/pen/WvJMXP.css">.css</a><a target="_blank" rel="noopener noreferrer" href="https://codepen.io/chrisgannon/pen/WvJMXP.js">.js</a></div></div><div class="ViewSwitcher_switch-1Ih20 editor-layout-section"><h3>Editor Layout:</h3><div class="editor-layout-buttons"><a id="left-layout" href="https://codepen.io/chrisgannon/pen/WvJMXP/left/" class="layout-change-icon" data-layout-type="left"><span class="screen-reader-text">Use Left Layout</span><svg width="20" height="20" class="editor-left rotate-cc90 icon icon-icon-new-pen"><use xlink:href="/svg_sprite?v=8885a907#icon-new-pen"></use></svg></a><a id="top-layout" href="https://codepen.io/chrisgannon/pen/WvJMXP/top/" class="layout-change-icon" data-layout-type="top"><span class="screen-reader-text">Use Top Layout</span><svg width="20" height="20" class="new-pen icon icon-icon-new-pen"><use xlink:href="/svg_sprite?v=8885a907#icon-new-pen"></use></svg></a><a id="right-layout" href="https://codepen.io/chrisgannon/pen/WvJMXP/right/" class="layout-change-icon" data-layout-type="right"><span class="screen-reader-text">Use Right Layout</span><svg width="20" height="20" class="editor-right rotate-c90 icon icon-icon-new-pen"><use xlink:href="/svg_sprite?v=8885a907#icon-new-pen"></use></svg></a></div></div></div></div></div><a class="button button-medium green bold undefined" data-test-id="signup-button" href="https://codepen.io/accounts/signup/user/free">Sign Up</a><a class="button button-medium undefined" data-test-id="login-button" href="https://codepen.io/login">Log In</a></div></header>
+<div class="item-settings-modal pen  item-settings-modal-half" id="item-settings-modal">
+<header class="item-settings-modal-header">
+<h2 class="item-settings-modal-header-title">Pen Settings</h2>
+<div class="save-and-close-wrap">
+<button type="button" class="button mini-button button-no-right-margin close" id="top-close-settings">
+<svg class="icon-x">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+</button>
+</div>
+</header>
+<div class="tabs settings-tabs-wrapper">
+<nav id="settings-tabs" class="no-mobile-nav item-settings-tabs">
+<div class="item-settings-tab-group">
+<a id="settings-html-tab" href="https://codepen.io/chrisgannon/pen/WvJMXP#settings-html" class="settings-tab-html active" data-type="html">HTML</a>
+<a id="settings-css-tab" href="https://codepen.io/chrisgannon/pen/WvJMXP#settings-css" class="settings-tab-css" data-type="css">CSS</a>
+<a id="settings-js-tab" href="https://codepen.io/chrisgannon/pen/WvJMXP#settings-js" class="settings-tab-js" data-type="js">JavaScript</a>
+</div>
+<div class="item-settings-tab-group">
+<a id="settings-behavior-tab" href="https://codepen.io/chrisgannon/pen/WvJMXP#settings-behavior" class="settings-tab-behavior" data-type="behavior">Behavior</a>
+<a id="settings-editor-tab" href="https://codepen.io/chrisgannon/pen/WvJMXP#settings-editor" class="settings-tab-editor" data-type="editor">Editor</a>
+</div>
+</nav>
+<div class="settings active" id="settings-html">
+<h3 aria-label="HTML">HTML</h3>
+<form class="settings-row top-label-form normal-labels preprocessor-choice group">
+<h4>
+<label for="html-preprocessor">HTML Preprocessor</label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About HTML Preprocessors</h5>
+<svg class="icon-x">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>HTML preprocessors can make writing HTML more powerful or convenient. For instance, Markdown is designed to be easier to write and read for text documents and you could write a loop in Pug.</p>
+<p><a href="https://blog.codepen.io/documentation/editor/using-html-preprocessors/" target="_blank" rel="noopener">Learn more</a> · <a href="https://codepen.io/versions/" target="_blank" rel="noopener">Versions</a></p>
+</div>
+</div>
+<div class="custom-select-wrap">
+<select name="html-preprocessor" id="html-preprocessor" class="fullwidth">
+<option value="none">None</option>
+<option value="haml">Haml</option>
+<option value="markdown">Markdown</option>
+<option value="slim">Slim</option>
+<option value="pug">Pug</option>
+</select>
+<div class="select-icon">
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+</div>
+</div>
+</form>
+<form class="settings-row top-label-form normal-labels prevent-form-submit" onsubmit="return false;">
+<h4>
+<label for="html-classes">Add Class(es) to &lt;html&gt;</label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>Adding Classes</h5>
+<svg class="icon-x">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>In CodePen, whatever you write in the HTML editor is what goes within the <code>&lt;body&gt;</code> tags in <a target="_blank" rel="noopener" href="https://blog.codepen.io/documentation/features/preview-template/">a basic HTML5 template</a>. So you don't have access to higher-up elements like the <code>&lt;html&gt;</code> tag. If you want to add classes there that can affect the whole document, this is the place to do it.</p>
+</div>
+</div>
+<input type="text" id="html-classes" name="html-classes" class="fullwidth" placeholder="e.g. single post post-1234" maxlength="250">
+</form>
+<form class="settings-row top-label-form normal-labels prevent-form-submit" onsubmit="return false;">
+<h4>
+<label for="head-content">Stuff for &lt;head&gt;</label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About the &lt;head&gt;</h5>
+<svg class="icon-x">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>In CodePen, whatever you write in the HTML editor is what goes within the <code>&lt;body&gt;</code> tags in <a target="_blank" rel="noopener" href="https://blog.codepen.io/documentation/features/preview-template/">a basic HTML5 template</a>. If you need things in the <code>&lt;head&gt;</code> of the document, put that code here.</p>
+</div>
+</div>
+<div class="head-content-wrapper">
+<textarea id="head-content" name="head-content" class="fullwidth is-code head-content" placeholder="e.g. &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;"></textarea>
+<span class="insecure-resource-tooltip">
+<div class="help-flyout-link">
+<span class="icon-help">!</span>
+<div class="help-flyout help-flyout-reverse">
+<svg class="icon-x">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<h5>Insecure Resource</h5>
+<p>The resource you are linking to is using the 'http' protocol, which may not work when the browser is using https.</p>
+</div>
+</div>
+</span>
+</div>
+<button class="button mini-button button-medium" id="meta-tag-insert">↑ Insert the most common viewport meta tag</button>
+</form>
+</div>
+<div class="settings" id="settings-css">
+<h3 aria-label="CSS">CSS</h3>
+<form class="settings-row settings-row-1 top-label-form normal-labels preprocessor-choice group">
+<h4>
+<label for="css-preprocessor">CSS Preprocessor</label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About CSS Preprocessors</h5>
+<svg class="icon-x">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>CSS preprocessors help make authoring CSS easier. All of them offer things like variables and mixins to provide convenient abstractions.</p>
+<p><a href="https://blog.codepen.io/documentation/editor/using-css-preprocessors/" target="_blank">Learn more</a> · <a href="https://codepen.io/versions/" target="_blank">Versions</a></p>
+</div>
+</div>
+<div class="custom-select-wrap">
+<select name="css-preprocessor" id="css-preprocessor" class="fullwidth css-preprocessor">
+<option value="none">None</option>
+<option value="less">Less</option>
+<option value="scss">SCSS</option>
+<option value="sass">Sass</option>
+<option value="stylus">Stylus</option>
+<option value="postcss">PostCSS</option>
+</select>
+<div class="select-icon">
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+</div>
+</div>
+<div id="need-an-addon" class="align-right hide">
+<a id="css-need-an-addon-button" href="https://codepen.io/chrisgannon/pen/WvJMXP#0" class="button button-medium mini-button need-an-addon-button">
+Need an add-on?
+</a>
+</div>
+<div class="add-ons add-ons-scss hide" id="add-ons"></div>
+</form>
+<form id="startercss-options-form" class="settings-row settings-row-2 top-label-form prevent-form-submit" onsubmit="return false;">
+<h4>
+CSS Base
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About CSS Base</h5>
+<svg class="icon-x">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>It's a common practice to apply CSS to a page that styles elements such that they are consistent across all browsers. We offer two of the most popular choices: <a href="https://necolas.github.io/normalize.css/" target="_blank" rel="noopener">normalize.css</a> and a <a href="http://meyerweb.com/eric/tools/css/reset/" target="_blank" rel="noopener">reset</a>. Or, choose <b>Neither</b> and nothing will be applied.</p>
+</div>
+</div>
+<ul class="radio-list">
+<li>
+<input type="radio" id="startercss-normalize" name="startercss" checked="" value="normalize">
+<label for="startercss-normalize" class="small-inline">Normalize</label>
+</li>
+<li>
+<input type="radio" id="startercss-reset" name="startercss" checked="" value="reset">
+<label for="startercss-reset" class="small-inline">Reset</label>
+</li>
+<li>
+<input type="radio" id="startercss-neither" name="startercss" checked="" value="neither">
+<label for="startercss-neither" class="small-inline">Neither</label>
+</li>
+</ul>
+</form>
+<form id="prefix-options-form" class="settings-row settings-row-3 top-label-form">
+<h4>
+Vendor Prefixing
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About Vendor Prefixing</h5>
+<svg class="icon-x">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>To get the best cross-browser support, it is a common practice to apply vendor prefixes to CSS properties and values that require them to work. For instance <code>-webkit-</code> or <code>-moz-</code>.</p>
+<p>We offer two popular choices: <a href="https://github.com/postcss/autoprefixer" target="blank" rel="noopener">Autoprefixer</a> (which processes your CSS server-side) and <a href="https://leaverou.github.io/prefixfree/" target="_blank" rel="noopener">-prefix-free</a> (which applies prefixes via a script, client-side).</p>
+</div>
+</div>
+<ul class="radio-list">
+<li>
+<input type="radio" id="prefix-autoprefixer" name="prefix" value="autoprefixer">
+<label for="prefix-autoprefixer" class="small-inline">Autoprefixer</label>
+</li>
+<li>
+<input type="radio" id="prefix-prefixfree" name="prefix" value="prefixfree">
+<label for="prefix-prefixfree" class="small-inline">Prefixfree</label>
+</li>
+<li>
+<input type="radio" id="prefix-neither" name="prefix" value="neither">
+<label for="prefix-neither" class="small-inline">Neither</label>
+</li>
+</ul>
+</form>
+<form id="external-css-resources" class="settings-row settings-row-4 top-label-form prevent-form-submit" onsubmit="return false;">
+<h4>
+Add External Stylesheets/Pens
+</h4>
+<p>Any URL's added here will be added as <code>&lt;link&gt;</code>s in order, and before the CSS in the editor. If you link to another Pen, it will include the CSS from that Pen. If the preprocessor matches, it will attempt to combine them before processing.</p>
+<div class="resource-search-bar">
+<svg class="icon icon-mag">
+<use xlink:href="/svg_sprite?v=8885a907#mag"></use>
+</svg>
+<span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input id="external-css-search" type="text" value="" placeholder="Search for resources (Bootstrap, Foundation, Animate.css...)" class="aa-input" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="both" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Tahoma, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"><div class="aa-dataset-1"></div><div class="aa-dataset-2"></div></span></span>
+</div>
+<div class="algolia-shoutout">
+<a href="https://www.algolia.com/?utm_source=react-instantsearch&amp;utm_medium=website&amp;utm_content=codepen.io&amp;utm_campaign=poweredby" target="_blank">
+Powered by <img alt="Algolia" src="./All Devices in SVG_files/algolia-9e1c0c887f4db420704b2a79926864019ef156bcecc9d5774a7e4eaa731fc5b5.svg">
+</a>
+</div>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About External Resources</h5>
+<svg class="icon-x">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>You can apply CSS to your Pen from any stylesheet on the web. Just put a URL to it here and we'll apply it, in the order you have them, before the CSS in the Pen itself.</p>
+<p>If the stylesheet you link to has the file extension of a preprocessor, we'll attempt to process it before applying.</p>
+<p>You can also link to another Pen here, and we'll pull the CSS from that Pen and include it. If it's using a matching preprocessor, we'll combine the code before preprocessing, so you can use the linked Pen as a true dependency.</p>
+<p><a href="https://blog.codepen.io/documentation/editor/adding-external-resources/" target="_blank" rel="noopener">Learn more</a></p>
+</div>
+</div>
+<div id="css-external-resources" class="external-resource-wrapper ui-sortable">
+<div data-view-id="88355514" class="external-resource-url-row ">
+
+    <span class="move-external-url">
+      <svg class="icon-drag-handle" width="20" height="17">
+        <use xlink:href="/svg_sprite?v=8885a907#drag-handle"></use>
+      </svg>
+    </span>
+
+    <input id="external-resource-input-88355514" class="fullwidth css-resource external-resource" type="text" pattern="^((ftp|http|https):)?\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&amp;%@!\-\/]))?$" name="external-css" placeholder="https://yourwebsite.com/style.css" value="" data-view-id="88355514">
+
+    <span class="insecure-resource-tooltip">
+      <div class="help-flyout-link">
+        <span class="icon-help">!</span>
+        <div class="help-flyout help-flyout-reverse">
+          <svg class="icon-x">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg_sprite?v=8885a907#x"></use>
+          </svg>
+          <h5>Insecure Resource</h5>
+          <p>The resource you are linking to is using the HTTP protocol, which may not work when the browser is using HTTPS.</p>
+        </div>
+      </div>
+    </span>
+
+    <div class="resource-actions">
+      <span class="remove-external-url external-url-option" data-view-id="88355514">
+        <svg class="icon-x" width="12" height="12">
+          <use xlink:href="/svg_sprite?v=8885a907#x"></use>
+        </svg>
+      </span>
+
+      <a id="external-resource-input-view-link-88355514" class="open-external-url external-url-option" target="_blank" rel="noopener" data-view-id="88355514" href="https://codepen.io/chrisgannon/pen/WvJMXP">
+        <svg class="icon-eye" width="14" height="14">
+          <use xlink:href="/svg_sprite?v=8885a907#eye"></use>
+        </svg>
+      </a>
+    </div>
+
+  </div><div data-view-id="71114411" class="external-resource-url-row ">
+
+    <span class="move-external-url">
+      <svg class="icon-drag-handle" width="20" height="17">
+        <use xlink:href="/svg_sprite?v=8885a907#drag-handle"></use>
+      </svg>
+    </span>
+
+    <input id="external-resource-input-71114411" class="fullwidth css-resource external-resource" type="text" pattern="^((ftp|http|https):)?\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&amp;%@!\-\/]))?$" name="external-css" placeholder="https://codepen.io/username/pen/aBcDef" value="" data-view-id="71114411">
+
+    <span class="insecure-resource-tooltip">
+      <div class="help-flyout-link">
+        <span class="icon-help">!</span>
+        <div class="help-flyout help-flyout-reverse">
+          <svg class="icon-x">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg_sprite?v=8885a907#x"></use>
+          </svg>
+          <h5>Insecure Resource</h5>
+          <p>The resource you are linking to is using the HTTP protocol, which may not work when the browser is using HTTPS.</p>
+        </div>
+      </div>
+    </span>
+
+    <div class="resource-actions">
+      <span class="remove-external-url external-url-option" data-view-id="71114411">
+        <svg class="icon-x" width="12" height="12">
+          <use xlink:href="/svg_sprite?v=8885a907#x"></use>
+        </svg>
+      </span>
+
+      <a id="external-resource-input-view-link-71114411" class="open-external-url external-url-option" target="_blank" rel="noopener" data-view-id="71114411" href="https://codepen.io/chrisgannon/pen/WvJMXP">
+        <svg class="icon-eye" width="14" height="14">
+          <use xlink:href="/svg_sprite?v=8885a907#eye"></use>
+        </svg>
+      </a>
+    </div>
+
+  </div></div>
+<script id="css-external-resources-template" type="text/template">
+  <div data-view-id="<%= view_id %>" class="external-resource-url-row <%= insecure_resource %>">
+
+    <span class="move-external-url">
+      <svg class="icon-drag-handle" width="20" height="17">
+        <use xlink:href="/svg_sprite?v=8885a907#drag-handle" />
+      </svg>
+    </span>
+
+    <input
+      id="external-resource-input-<%= view_id %>"
+      class="fullwidth css-resource external-resource"
+      type="text"
+      pattern="^((ftp|http|https):)?\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$"
+      name="external-css"
+      placeholder="<%= placeholder %>"
+      value="<%= url %>"
+      data-view-id="<%= view_id %>">
+
+    <span class="insecure-resource-tooltip">
+      <div class="help-flyout-link">
+        <span class="icon-help">!</span>
+        <div class="help-flyout help-flyout-reverse">
+          <svg class="icon-x">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg_sprite?v=8885a907#x"></use>
+          </svg>
+          <h5>Insecure Resource</h5>
+          <p>The resource you are linking to is using the HTTP protocol, which may not work when the browser is using HTTPS.</p>
+        </div>
+      </div>
+    </span>
+
+    <div class="resource-actions">
+      <span class="remove-external-url external-url-option" data-view-id="<%= view_id %>">
+        <svg class="icon-x" width="12" height="12">
+          <use xlink:href="/svg_sprite?v=8885a907#x" />
+        </svg>
+      </span>
+
+      <a id="external-resource-input-view-link-<%= view_id %>" class="open-external-url external-url-option" target="_blank" rel="noopener" data-view-id="<%= view_id %>" href="<%= url %>">
+        <svg class="icon-eye" width="14" height="14">
+          <use xlink:href="/svg_sprite?v=8885a907#eye" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</script>
+<div class="external-resource-actions group">
+<span id="add-css-resource" class="button mini-button button-medium add-resource" data-type="css">
+<span data-type="css">+ add another resource</span>
+</span>
+</div>
+</form>
+</div>
+<div class="settings" id="settings-js">
+<div class="item-settings-javascript normal-labels">
+<h3 aria-label="JavaScript">JavaScript</h3>
+<div class="item-settings-javascript-preprocessor settings-row">
+<h4>
+<label for="js-preprocessor">JavaScript Preprocessor</label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help" width="14" height="14">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About JavaScript Preprocessors</h5>
+<svg class="icon-x" width="12" height="12">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>JavaScript preprocessors can help make authoring JavaScript easier and more convenient. For instance, CoffeeScript can help prevent easy-to-make mistakes and offer a cleaner syntax and Babel can bring ECMAScript 6 features to browsers that only support ECMAScript 5.</p>
+<p><a href="https://blog.codepen.io/documentation/editor/using-js-preprocessors/" target="_blank" rel="noopener">Learn more</a> · <a href="https://codepen.io/versions/" target="_blank">Versions</a></p>
+</div>
+</div>
+<div class="custom-select-wrap">
+<select name="js-preprocessor" id="js-preprocessor" class="fullwidth">
+<option value="none">None</option>
+<option value="babel">Babel</option>
+<option value="typescript">TypeScript</option>
+<option value="coffeescript">CoffeeScript</option>
+<option value="livescript">LiveScript</option>
+</select>
+<div class="select-icon">
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+</div>
+</div>
+<div class="processing-packages-message callout hide" id="processing-packages-message">
+Babel is required to process package imports. If you need a different preprocessor remove all packages first.
+</div>
+</div>
+<div id="external-js-resources" class="item-settings-javascript-external settings-row external-js-resources top-label-form prevent-form-submit" onsubmit="return false;">
+<h4>
+Add External Scripts/Pens
+</h4>
+<p>Any URL's added here will be added as <code>&lt;script&gt;</code>s in order, and run <em>before</em> the JavaScript in the editor. You can use the URL of any other Pen and it will include the JavaScript from that Pen.</p>
+<div class="resource-search-bar">
+<svg class="icon icon-mag" width="18" height="18">
+<use xlink:href="/svg_sprite?v=8885a907#mag"></use>
+</svg>
+<span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input id="external-js-search" type="text" value="" placeholder="Search CDNjs (jQuery, Lodash, React, Angular, Vue.js, Ember...)" class="aa-input" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="both" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-3" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Tahoma, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-3" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"><div class="aa-dataset-4"></div><div class="aa-dataset-5"></div></span></span>
+</div>
+<div class="algolia-shoutout">
+<a href="https://www.algolia.com/?utm_source=react-instantsearch&amp;utm_medium=website&amp;utm_content=codepen.io&amp;utm_campaign=poweredby" target="_blank">
+Powered by <img alt="Algolia" src="./All Devices in SVG_files/algolia-9e1c0c887f4db420704b2a79926864019ef156bcecc9d5774a7e4eaa731fc5b5.svg">
+</a>
+</div>
+<div class="help-flyout-link">
+<svg class="icon-help" width="14" height="14">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About External Resources</h5>
+<svg class="icon-x" width="12" height="12">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>You can apply a script from anywhere on the web to your Pen. Just put a URL to it here and we'll add it, in the order you have them, before the JavaScript in the Pen itself.</p>
+<p>If the script you link to has the file extension of a preprocessor, we'll attempt to process it before applying.</p>
+<p>You can also link to another Pen here, and we'll pull the JavaScript from that Pen and include it. If it's using a matching preprocessor, we'll combine the code before preprocessing, so you can use the linked Pen as a true dependency.</p>
+<p><a href="https://blog.codepen.io/documentation/editor/adding-external-resources/" target="_blank">Learn more</a></p>
+</div>
+</div>
+<div id="js-external-resources" class="external-resource-wrapper ui-sortable">
+<div data-view-id="88874353" class="external-resource-url-row ">
+
+    <span class="move-external-url">
+      <svg class="icon-drag-handle" width="20" height="17">
+        <use xlink:href="/svg_sprite?v=8885a907#drag-handle"></use>
+      </svg>
+    </span>
+
+    <input id="external-resource-input-88874353" class="fullwidth js-resource external-resource" type="text" pattern="^((ftp|http|https):)?\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&amp;%@!\-\/]))?$" name="external-js" placeholder="https://yourwebsite.com/script.js" value="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js" data-view-id="88874353">
+
+    <span class="insecure-resource-tooltip">
+      <div class="help-flyout-link">
+        <span class="icon-help">!</span>
+        <div class="help-flyout help-flyout-reverse">
+          <svg class="icon-x">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg_sprite?v=8885a907#x"></use>
+          </svg>
+          <h5>Insecure Resource</h5>
+          <p>The resource you are linking to is using the HTTP protocol, which may not work when the browser is using HTTPS.</p>
+        </div>
+      </div>
+    </span>
+
+    <div class="resource-actions">
+      <span class="remove-external-url external-url-option" data-view-id="88874353">
+        <svg class="icon-x" width="12" height="12">
+          <use xlink:href="/svg_sprite?v=8885a907#x"></use>
+        </svg>
+      </span>
+
+      <a id="external-resource-input-view-link-88874353" class="open-external-url external-url-option" target="_blank" rel="noopener" data-view-id="88874353" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js">
+        <svg class="icon-eye" width="14" height="14">
+          <use xlink:href="/svg_sprite?v=8885a907#eye"></use>
+        </svg>
+      </a>
+    </div>
+
+  </div><div data-view-id="45895174" class="external-resource-url-row ">
+
+    <span class="move-external-url">
+      <svg class="icon-drag-handle" width="20" height="17">
+        <use xlink:href="/svg_sprite?v=8885a907#drag-handle"></use>
+      </svg>
+    </span>
+
+    <input id="external-resource-input-45895174" class="fullwidth js-resource external-resource" type="text" pattern="^((ftp|http|https):)?\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&amp;%@!\-\/]))?$" name="external-js" placeholder="https://codepen.io/username/pen/aBcDef" value="https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/AnticipateEase.min.js" data-view-id="45895174">
+
+    <span class="insecure-resource-tooltip">
+      <div class="help-flyout-link">
+        <span class="icon-help">!</span>
+        <div class="help-flyout help-flyout-reverse">
+          <svg class="icon-x">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg_sprite?v=8885a907#x"></use>
+          </svg>
+          <h5>Insecure Resource</h5>
+          <p>The resource you are linking to is using the HTTP protocol, which may not work when the browser is using HTTPS.</p>
+        </div>
+      </div>
+    </span>
+
+    <div class="resource-actions">
+      <span class="remove-external-url external-url-option" data-view-id="45895174">
+        <svg class="icon-x" width="12" height="12">
+          <use xlink:href="/svg_sprite?v=8885a907#x"></use>
+        </svg>
+      </span>
+
+      <a id="external-resource-input-view-link-45895174" class="open-external-url external-url-option" target="_blank" rel="noopener" data-view-id="45895174" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/AnticipateEase.min.js">
+        <svg class="icon-eye" width="14" height="14">
+          <use xlink:href="/svg_sprite?v=8885a907#eye"></use>
+        </svg>
+      </a>
+    </div>
+
+  </div></div>
+<script id="js-external-resources-template" type="text/template">
+  <div data-view-id="<%= view_id %>" class="external-resource-url-row <%= insecure_resource %>">
+
+    <span class="move-external-url">
+      <svg class="icon-drag-handle" width="20" height="17">
+        <use xlink:href="/svg_sprite?v=8885a907#drag-handle" />
+      </svg>
+    </span>
+
+    <input
+      id="external-resource-input-<%= view_id %>"
+      class="fullwidth js-resource external-resource"
+      type="text"
+      pattern="^((ftp|http|https):)?\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$"
+      name="external-js"
+      placeholder="<%= placeholder %>"
+      value="<%= url %>"
+      data-view-id="<%= view_id %>">
+
+    <span class="insecure-resource-tooltip">
+      <div class="help-flyout-link">
+        <span class="icon-help">!</span>
+        <div class="help-flyout help-flyout-reverse">
+          <svg class="icon-x">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg_sprite?v=8885a907#x"></use>
+          </svg>
+          <h5>Insecure Resource</h5>
+          <p>The resource you are linking to is using the HTTP protocol, which may not work when the browser is using HTTPS.</p>
+        </div>
+      </div>
+    </span>
+
+    <div class="resource-actions">
+      <span class="remove-external-url external-url-option" data-view-id="<%= view_id %>">
+        <svg class="icon-x" width="12" height="12">
+          <use xlink:href="/svg_sprite?v=8885a907#x" />
+        </svg>
+      </span>
+
+      <a id="external-resource-input-view-link-<%= view_id %>" class="open-external-url external-url-option" target="_blank" rel="noopener" data-view-id="<%= view_id %>" href="<%= url %>">
+        <svg class="icon-eye" width="14" height="14">
+          <use xlink:href="/svg_sprite?v=8885a907#eye" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</script>
+<div class="external-resource-actions group">
+<span id="add-js-resource" class="button button-medium mini-button add-resource" data-type="js">
+<span data-type="js">+ add another resource</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="settings" id="settings-packages">
+<h3 aria-label="Packages">Packages</h3>
+<div class="item-settings-packages settings-row" id="item-settings-packages">
+<h4>Add Packages</h4>
+<p>We can make <a href="https://www.npmjs.com/" target="blank" rel="noopener">npm</a> packages available for you to use in your JavaScript. We use <a href="https://webpack.js.org/" target="blank" rel="noopener">webpack</a> to prepare them and make them available to <code>import</code> or <code>require</code>. We'll also process your JavaScript with <a href="https://babeljs.io/" target="_blank" rel="noopener">Babel</a>.</p>
+<p>
+⚠️ This feature can only be used by logged in users.
+</p>
+</div>
+</div>
+<div class="settings pen-settings-panel" id="settings-behavior">
+<h3 aria-label="Pen Behavior">Behavior</h3>
+<form class="settings-row settings-row-2 top-label-form prevent-form-submit" onsubmit="return false;">
+<h4>Save Automatically?</h4>
+<div>
+<p class="hint">If active, Pens will autosave every 30 seconds after being saved once.</p>
+<div class="ios-toggle-mega-label-wrap">
+<span class="ios-toggle ios-toggle-ambiguous">
+<input type="checkbox" id="auto-save" name="auto-save" checked="">
+<label for="auto-save"></label>
+<label for="auto-save" class="ios-toggle-mega-label"></label>
+</span>
+</div>
+</div>
+</form>
+<form class="settings-row settings-row-3 top-label-form prevent-form-submit" onsubmit="return false;">
+<h4>Auto-Updating Preview</h4>
+<p class="hint">If enabled, the preview panel updates automatically as you code. If disabled, use the "Run" button to update.</p>
+<div class="ios-toggle-mega-label-wrap">
+<span class="ios-toggle ios-toggle-ambiguous">
+<input type="checkbox" id="auto-run" name="auto-run" checked="">
+<label for="auto-run"></label>
+<label for="auto-run" class="ios-toggle-mega-label"></label>
+</span>
+</div>
+</form>
+</div>
+<div class="settings pen-settings-panel" id="settings-editor">
+<h3 aria-label="Editor Settings">Editor Settings</h3>
+<form id="editor-settings-form" class="settings-row settings-row-1 top-label-form prevent-form-submit" onsubmit="return false;">
+<h4>Code Indentation</h4>
+<div class="settings-row">
+<ul class="radio-list">
+<li>
+<input type="radio" id="indent-with-spaces" name="indent-with" value="spaces" checked="">
+<label for="indent-with-spaces" class="small-inline">Spaces</label>
+</li>
+<li>
+<input type="radio" id="indent-with-tabs" name="indent-with" value="tabs">
+<label for="indent-with-tabs" class="small-inline">Tabs</label>
+</li>
+</ul>
+</div>
+<div class="settings-row top-label-form normal-labels">
+<h4><label for="tab-size">Indent width</label></h4>
+<div class="custom-select-wrap">
+<select id="tab-size" class="fullwidth" name="tab-size">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+</select>
+<div class="select-icon">
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+</div>
+</div>
+</div>
+</form>
+<div class="settings-row">
+<h4>Want to change your Syntax Highlighting theme, Fonts and more?</h4>
+<p>Visit <a href="https://codepen.io/you/settings/editor" target="_blank">your global Editor Settings</a>.</p>
+</div>
+</div>
+</div>
+<footer>
+<div class="save-and-close-wrap">
+<input type="button" class="button button-small green button-no-right-margin close" value="Close" id="close-settings">
+</div>
+</footer>
+</div>
+<div class="tour-modals">
+<div id="tour-intro-modal" class="tour-modal tour-intro-modal">
+<h2 id="tour-intro-modal-heading" class="tour-intro-modal-heading"></h2>
+<p id="tour-intro-modal-description" class="tour-intro-modal-description"></p>
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#" id="tour-intro-start-btn" class="tour-intro-start-btn button green"></a>
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#" id="tour-intro-cancel-link" class="tour-cancel-link"></a>
+</div>
+<div id="tour-step-modal" class="tour-modal tour-step-modal">
+<div class="tour-modal-instructions">
+<p id="tour-step-modal-instruction" class="tour-modal-instruction">HTML Settings</p>
+<p id="tour-step-modal-info" class="tour-modal-further-info">Here you can Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. </p>
+</div>
+<div id="tour-progress" class="tour-progress">
+<div id="tour-progress-indicator" class="tour-progress-indicator"></div>
+</div>
+<div class="tour-next-step">
+<a id="tour-step-next-btn" class="tour-next-step-btn button green">Next Step</a>
+<a id="tour-step-cancel" class="tour-cancel-link" href="https://codepen.io/chrisgannon/pen/WvJMXP#">Leave tour</a>
+</div>
+<div id="tour-step-modal-arrow" class="tour-step-modal-arrow"></div>
+</div>
+<div id="tour-complete-modal" class="tour-modal tour-complete-modal">
+<h2 id="tour-complete-modal-heading" class="tour-intro-complete-heading"></h2>
+<p id="tour-complete-modal-description" class="tour-intro-complete-description"></p>
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#" id="tour-complete-option-1" class="tour-intro-start-btn button green"></a>
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#" id="tour-complete-option-2" class="tour-cancel-link"></a>
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#" id="tour-complete-option-3" class="tour-cancel-link"></a>
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#" id="tour-complete-option-4" class="tour-cancel-link"></a>
+</div>
+</div>
+<div id="tour-overlay" class="tour-overlay">
+<div id="tour-overlay-section-0" class="tour-overlay-section"></div>
+<div id="tour-overlay-section-1" class="tour-overlay-section"></div>
+<div id="tour-overlay-section-2" class="tour-overlay-section"></div>
+<div id="tour-overlay-section-3" class="tour-overlay-section"></div>
+</div>
+<div class="page-wrap twilight">
+<div class="boxes">
+<div class="mobile-editor-nav">
+<button id="html-toggle" class="selected"><span>HTML</span></button>
+<button id="css-toggle"><span>CSS</span></button>
+<button id="js-toggle"><span>JS</span></button>
+<button id="result-toggle" class="selected"><span>Result</span></button>
+</div>
+<div class="top-boxes editor-parent">
+<div class="editor-resizer html-editor-resizer" title="Double-click to expand."><h2 class="box-title html-editor-title none box-title--resizer" id="html-editor-title"><span class="box-title-name">HTML</span></h2></div>
+<div id="box-html" class="box box-html none" data-type="html" style="width: 32.2917%;">
+<div class="powers">
+<div class="powers-drag-handle" title="Double-click to expand."></div>
+<div class="editor-actions-left">
+<button id="settings-pane-html" class="button button-medium mini-button settings-nub" data-type="html" title="Open HTML Settings">
+<svg class="icon-gear" width="10" height="10">
+<use xlink:href="/svg_sprite?v=8885a907#gear"></use>
+</svg>
+</button>
+<h2 class="box-title html-editor-title none" id="html-editor-title"><span class="box-title-name">HTML</span></h2>
+<div class="unsaved-editor-message"><b>0</b> unsaved changes <span class="dismiss"><svg class="icon-x"><use xlink:href="/svg_sprite?v=8885a907#x"></use></svg></span></div></div>
+<div class="editor-actions-right">
+<div class="collaborators-indicators"></div>
+<button class="button mini-button button-medium editor-dropdown-button editor-dropdown-button-html" data-dropdown="#editor-dropdown-html" aria-haspopup="true" aria-expanded="false">
+<span class="visually-hidden">
+HTML Options
+</span>
+<svg class="icon-arrow-down-mini" width="10" height="10">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+</button>
+<ul id="editor-dropdown-html" class="link-list is-dropdown editor-dropdown editor-dropdown-html" data-dropdown-position="css" data-dropdown-type="html">
+<li>
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#0" id="html-tidy-code-button" class="tidy-code-button" data-type="html">
+Tidy HTML
+</a>
+</li>
+<li>
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#0" class="view-compiled-button" id="html-view-compiled" data-type="html">
+View Compiled HTML
+</a>
+</li>
+<li>
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#0" class="analyze" id="analyze-html" data-type="html">
+Analyze HTML
+</a>
+</li>
+<li class="maximize">
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#0">
+Maximize HTML Editor
+</a>
+</li>
+<li class="minimize">
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#0">
+Minimize HTML Editor
+</a>
+</li>
+<li class="editor-dropdown-folding-list-item">
+<button class="invisible-button fold-all-button" data-editor-type="html">
+Fold All
+</button>
+</li>
+<li class="editor-dropdown-folding-list-item">
+<button class="invisible-button unfold-all-button" data-editor-type="html">
+Unfold All
+</button>
+</li>
+</ul>
+</div>
+</div>
+<div class="code-wrap">
+<div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 43px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: -17px; border-right-width: 13px; min-height: 50px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 20.6px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[[[https://codepen.io/chrisgannon/pen/3443855ffc8fdfb2a036cdc9f200e90c]]]</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom: 0px solid transparent; top: 50px;"></div><div class="CodeMirror-gutters" style="height: 63px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div>
+<div class="error-bar" id="error-bar-html">
+<span class="error-icon" data-type="html">
+!
+</span>
+</div>
+</div>
+</div>
+<div class="editor-resizer css-editor-resizer" title="Double-click to expand."><h2 class="box-title css-editor-title none box-title--resizer" id="css-editor-title"><span class="box-title-name">CSS</span></h2></div>
+<div id="box-css" class="box box-css none neither" data-type="css" style="width: 32.2917%;">
+<div class="powers">
+<div class="powers-drag-handle" title="Double-click to expand."></div>
+<div class="editor-actions-left">
+<button id="settings-pane-css" class="button button-medium mini-button settings-nub" data-type="css" title="Open CSS Settings">
+<svg class="icon-gear" width="10" height="10">
+<use xlink:href="/svg_sprite?v=8885a907#gear"></use>
+</svg>
+</button>
+<h2 class="box-title css-editor-title none" id="css-editor-title"><span class="box-title-name">CSS</span></h2>
+</div>
+<div class="editor-actions-right">
+<div class="collaborators-indicators"></div>
+<button class="button mini-button button-medium editor-dropdown-button editor-dropdown-button-css" data-dropdown="#editor-dropdown-css" aria-haspopup="true" aria-expanded="false">
+<span class="visually-hidden">
+CSS Options
+</span>
+<svg class="icon-arrow-down-mini" width="10" height="10">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+</button>
+<ul id="editor-dropdown-css" class="link-list is-dropdown editor-dropdown editor-dropdown-css" data-dropdown-position="css" data-dropdown-type="css">
+<li>
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#0" id="css-tidy-code-button" class="tidy-code-button" data-type="css">
+Tidy CSS
+</a>
+</li>
+<li>
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#0" class="view-compiled-button" id="css-view-compiled" data-type="css">
+View Compiled CSS
+</a>
+</li>
+<li>
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#0" class="analyze" id="analyze-css" data-type="css">
+Analyze CSS
+</a>
+</li>
+<li class="maximize">
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#0">
+Maximize CSS Editor
+</a>
+</li>
+<li class="minimize">
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#0">
+Minimize CSS Editor
+</a>
+</li>
+<li class="editor-dropdown-folding-list-item">
+<button class="invisible-button fold-all-button" data-editor-type="css">
+Fold All
+</button>
+</li>
+<li class="editor-dropdown-folding-list-item">
+<button class="invisible-button unfold-all-button" data-editor-type="css">
+Unfold All
+</button>
+</li>
+</ul>
+</div>
+</div>
+<div class="code-wrap">
+<div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 43px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: block; bottom: 0px;"><div style="height: 144.617px; top: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: -16px; border-right-width: 14px; min-height: 696px; padding-right: 9px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation" style="padding-bottom: 276.2px;"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 20.8px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">body</span>{</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">background-color</span>:<span class="cm-atom">#7E82AB</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">overflow</span>:<span class="cm-atom">hidden</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">display</span>: <span class="cm-atom">flex</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">align-items</span>: <span class="cm-atom">center</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">justify-content</span>: <span class="cm-atom">center</span>; &nbsp; </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">body</span>, <span class="cm-tag">html</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">height</span>: <span class="cm-number">100%</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">width</span>: <span class="cm-number">100%</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">margin</span>: <span class="cm-number">0</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">padding</span>: <span class="cm-number">0</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">svg</span>{</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">width</span>:<span class="cm-number">50%</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">height</span>:<span class="cm-number">50%</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">visibility</span>:<span class="cm-atom">hidden</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 14px; width: 1px; border-bottom: 0px solid transparent; top: 696px;"></div><div class="CodeMirror-gutters" style="height: 710px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div>
+<div class="error-bar" id="error-bar-css">
+<span class="error-icon" data-type="css">
+!
+</span>
+</div>
+</div>
+</div>
+<div class="editor-resizer js-editor-resizer" title="Double-click to expand."><h2 class="box-title js-editor-title none box-title--resizer" id="js-editor-title"><span class="box-title-name">JS</span></h2></div>
+<div id="box-js" class="box box-js none" data-type="js" style="width: 32.2917%;">
+<div class="powers">
+<div class="powers-drag-handle" title="Double-click to expand."></div>
+<div class="editor-actions-left">
+<button id="settings-pane-js" class="button button-medium mini-button settings-nub" data-type="js" title="Open JS Settings">
+<svg class="icon-gear" width="10" height="10">
+<use xlink:href="/svg_sprite?v=8885a907#gear"></use>
+</svg>
+</button>
+<h2 class="box-title js-editor-title none" id="js-editor-title"><span class="box-title-name">JS</span></h2>
+</div>
+<div class="editor-actions-right">
+<div class="collaborators-indicators"></div>
+<button class="button mini-button button-medium editor-dropdown-button editor-dropdown-button-js" data-dropdown="#editor-dropdown-js" aria-haspopup="true" aria-expanded="false">
+<span class="visually-hidden">
+JS Options
+</span>
+<svg class="icon-arrow-down-mini" width="10" height="10">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+</button>
+<ul id="editor-dropdown-js" class="link-list is-dropdown editor-dropdown editor-dropdown-js" data-dropdown-position="css" data-dropdown-type="js">
+<li>
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#0" id="js-tidy-code-button" class="tidy-code-button" data-type="js">
+Tidy JS
+</a>
+</li>
+<li>
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#0" class="view-compiled-button" id="js-view-compiled" data-type="js">
+View Compiled JS
+</a>
+</li>
+<li>
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#0" class="analyze" id="analyze-js" data-type="js">
+Analyze JS
+</a>
+</li>
+<li class="maximize">
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#0">
+Maximize JS Editor
+</a>
+</li>
+<li class="minimize">
+<a href="https://codepen.io/chrisgannon/pen/WvJMXP#0">
+Minimize JS Editor
+</a>
+</li>
+<li class="editor-dropdown-folding-list-item">
+<button class="invisible-button fold-all-button" data-editor-type="js">
+Fold All
+</button>
+</li>
+<li class="editor-dropdown-folding-list-item">
+<button class="invisible-button unfold-all-button" data-editor-type="js">
+Unfold All
+</button>
+</li>
+</ul>
+</div>
+</div>
+<div class="code-wrap">
+<div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 43px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: block; bottom: 0px;"><div style="height: 70.4239px; top: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: -17px; border-right-width: 13px; min-height: 1445px; padding-right: 9px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation" style="padding-bottom: 234.6px;"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>6</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 20.6px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">(<span class="cm-keyword">function</span>(){<span class="cm-keyword">var</span> <span class="cm-def">a</span><span class="cm-operator">=</span><span class="cm-keyword">function</span>(<span class="cm-def">a</span>){<span class="cm-keyword">return</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-variable-2">a</span>)},<span class="cm-def">t</span><span class="cm-operator">=</span><span class="cm-variable">document</span>.<span class="cm-property">querySelectorAll</span>(<span class="cm-string">".monitorContentGroup path"</span>);<span class="cm-variable-2">a</span>(<span class="cm-string">".monitorGroup"</span>);<span class="cm-keyword">var</span> <span class="cm-def">f</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".monitorScreen"</span>),<span class="cm-def">g</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".monitorLogo"</span>),<span class="cm-def">h</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".monitorStand"</span>),<span class="cm-def">u</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".monitorStandShadow"</span>),<span class="cm-def">c</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".monitorBottom"</span>),<span class="cm-def">v</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".monitorEdge"</span>),<span class="cm-def">C</span><span class="cm-operator">=</span><span class="cm-variable">document</span>.<span class="cm-property">querySelectorAll</span>(<span class="cm-string">".laptopContentGroup path"</span>),<span class="cm-def">w</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".laptopContentGroup"</span>),<span class="cm-def">x</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".laptopGroup"</span>),<span class="cm-def">d</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".laptopScreen"</span>),<span class="cm-def">k</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".laptopEdgeLeft"</span>),<span class="cm-def">l</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".laptopEdgeRight"</span>),<span class="cm-def">m</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".laptopTrackpad"</span>),<span class="cm-def">n</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".laptopBase"</span>);<span class="cm-variable">document</span>.<span class="cm-property">querySelectorAll</span>(<span class="cm-string">".tabletContentGroup path"</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">var</span> <span class="cm-def">e</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".tabletContentGroup"</span>),<span class="cm-def">b</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".tabletGroup"</span>),<span class="cm-def">p</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".tabletButton"</span>),<span class="cm-def">q</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".tabletCamera"</span>),<span class="cm-def">y</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".tabletScreen"</span>),<span class="cm-def">r</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".phoneGroup"</span>),<span class="cm-def">z</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".phoneButton"</span>),<span class="cm-def">A</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".phoneCamera"</span>),<span class="cm-def">a</span><span class="cm-operator">=</span><span class="cm-variable-2">a</span>(<span class="cm-string">".phoneSpeaker"</span>);<span class="cm-variable">TweenMax</span>.<span class="cm-property">set</span>([<span class="cm-variable-2">c</span>],{<span class="cm-property">transformOrigin</span>:<span class="cm-string">"50% 100%"</span>});<span class="cm-variable">TweenMax</span>.<span class="cm-property">set</span>([<span class="cm-variable-2">h</span>,<span class="cm-variable-2">n</span>,<span class="cm-variable-2">y</span>],{<span class="cm-property">transformOrigin</span>:<span class="cm-string">"50% 0%"</span>});<span class="cm-variable">TweenMax</span>.<span class="cm-property">set</span>([<span class="cm-variable-2">g</span>,<span class="cm-variable-2">f</span>,<span class="cm-variable-2">d</span>,<span class="cm-variable-2">m</span>,<span class="cm-variable-2">b</span>,<span class="cm-variable-2">x</span>,<span class="cm-variable-2">p</span>,<span class="cm-variable-2">q</span>,<span class="cm-variable-2">e</span>,<span class="cm-variable-2">z</span>,<span class="cm-variable-2">A</span>,<span class="cm-variable-2">a</span>,<span class="cm-variable-2">w</span>,<span class="cm-variable-2">r</span>],{<span class="cm-property">transformOrigin</span>:<span class="cm-string">"50% 50%"</span>});<span class="cm-variable">TweenMax</span>.<span class="cm-property">set</span>([<span class="cm-variable-2">k</span>,<span class="cm-variable-2">l</span>],{<span class="cm-property">transformOrigin</span>:<span class="cm-string">"0% 100%"</span>});<span class="cm-variable">TweenMax</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">b</span>,{<span class="cm-property">rotation</span>:<span class="cm-operator">-</span><span class="cm-number">90</span>});<span class="cm-keyword">var</span> <span class="cm-def">B</span><span class="cm-operator">=</span><span class="cm-keyword">new</span> <span class="cm-variable">TimelineMax</span>({<span class="cm-property">repeat</span>:<span class="cm-operator">-</span><span class="cm-number">1</span>,<span class="cm-property">delay</span>:<span class="cm-number">1</span>,<span class="cm-property">yoyo</span>:<span class="cm-operator">!</span><span class="cm-number">1</span>,<span class="cm-property">paused</span>:<span class="cm-operator">!</span><span class="cm-number">1</span>});</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">B</span>.<span class="cm-property">timeScale</span>(<span class="cm-number">3</span>);<span class="cm-variable-2">B</span>.<span class="cm-property">from</span>(<span class="cm-variable-2">c</span>,<span class="cm-number">1</span>,{<span class="cm-property">scaleY</span>:<span class="cm-number">0</span>,<span class="cm-property">ease</span>:<span class="cm-variable">Power1</span>.<span class="cm-property">easeOut</span>}).<span class="cm-property">from</span>(<span class="cm-variable-2">h</span>,<span class="cm-number">1</span>,{<span class="cm-property">y</span>:<span class="cm-operator">-</span><span class="cm-number">70</span>,<span class="cm-property">ease</span>:<span class="cm-variable">Power1</span>.<span class="cm-property">easeOut</span>},<span class="cm-string">"-=1"</span>).<span class="cm-property">from</span>(<span class="cm-variable-2">u</span>,<span class="cm-number">.5</span>,{<span class="cm-property">alpha</span>:<span class="cm-number">0</span>,<span class="cm-property">ease</span>:<span class="cm-variable">Power1</span>.<span class="cm-property">easeIn</span>},<span class="cm-string">"-=0.5"</span>).<span class="cm-property">from</span>(<span class="cm-variable-2">v</span>,<span class="cm-number">1</span>,{<span class="cm-property">y</span>:<span class="cm-number">330</span>},<span class="cm-string">"-=0.25"</span>).<span class="cm-property">from</span>(<span class="cm-variable-2">f</span>,<span class="cm-number">2</span>,{<span class="cm-property">y</span>:<span class="cm-number">330</span>,<span class="cm-property">ease</span>:<span class="cm-variable">Power1</span>.<span class="cm-property">easeOut</span>},<span class="cm-string">"-=1"</span>).<span class="cm-property">staggerFrom</span>(<span class="cm-variable-2">t</span>,<span class="cm-number">1</span>,{<span class="cm-property">scaleX</span>:<span class="cm-number">0</span>},<span class="cm-number">.1</span>,<span class="cm-string">"-=0.51"</span>).<span class="cm-property">from</span>(<span class="cm-variable-2">g</span>,<span class="cm-number">1</span>,{<span class="cm-property">scale</span>:<span class="cm-number">0</span>,<span class="cm-property">ease</span>:<span class="cm-variable">Back</span>.<span class="cm-property">easeOut</span>.<span class="cm-property">config</span>(<span class="cm-number">2</span>)}).<span class="cm-property">staggerTo</span>(<span class="cm-variable-2">t</span>,<span class="cm-number">1</span>,{<span class="cm-property">alpha</span>:<span class="cm-number">0</span>,<span class="cm-property">delay</span>:<span class="cm-number">2</span>},<span class="cm-number">.1</span>).<span class="cm-property">to</span>(<span class="cm-variable-2">f</span>,<span class="cm-number">1</span>,{<span class="cm-property">y</span>:<span class="cm-number">330</span>,<span class="cm-property">ease</span>:<span class="cm-variable">Power1</span>.<span class="cm-property">easeIn</span>},<span class="cm-string">"-=1"</span>).<span class="cm-property">to</span>(<span class="cm-variable-2">v</span>,<span class="cm-number">1</span>,{<span class="cm-property">y</span>:<span class="cm-number">330</span>,<span class="cm-property">ease</span>:<span class="cm-variable">Power1</span>.<span class="cm-property">easeIn</span>},<span class="cm-string">"-=0.75"</span>).<span class="cm-property">to</span>(<span class="cm-variable-2">c</span>,<span class="cm-number">1</span>,{<span class="cm-property">scaleX</span>:<span class="cm-number">.69</span>,<span class="cm-property">y</span>:<span class="cm-operator">-</span><span class="cm-number">23</span>}).<span class="cm-property">to</span>(<span class="cm-variable-2">c</span>,<span class="cm-number">1</span>,{<span class="cm-property">scaleY</span>:<span class="cm-number">.45</span>,<span class="cm-property">alpha</span>:<span class="cm-number">1</span>},<span class="cm-string">"-=1"</span>).<span class="cm-property">set</span>(<span class="cm-variable-2">c</span>,{<span class="cm-property">alpha</span>:<span class="cm-number">0</span>}).<span class="cm-property">to</span>(<span class="cm-variable-2">g</span>,</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-number">.5</span>,{<span class="cm-property">scale</span>:<span class="cm-number">0</span>,<span class="cm-property">ease</span>:<span class="cm-variable">Back</span>.<span class="cm-property">easeIn</span>},<span class="cm-string">"-=1"</span>).<span class="cm-property">to</span>(<span class="cm-variable-2">h</span>,<span class="cm-number">1</span>,{<span class="cm-property">y</span>:<span class="cm-operator">-</span><span class="cm-number">120</span>},<span class="cm-string">"-=1.5"</span>).<span class="cm-property">to</span>(<span class="cm-variable-2">u</span>,<span class="cm-number">.5</span>,{<span class="cm-property">alpha</span>:<span class="cm-number">0</span>},<span class="cm-string">"-=1.5"</span>).<span class="cm-property">from</span>(<span class="cm-variable-2">n</span>,<span class="cm-number">1</span>,{<span class="cm-property">alpha</span>:<span class="cm-number">0</span>},<span class="cm-string">"-=1"</span>).<span class="cm-property">from</span>(<span class="cm-variable-2">m</span>,<span class="cm-number">1</span>,{<span class="cm-property">scaleX</span>:<span class="cm-number">0</span>},<span class="cm-string">"-=1"</span>).<span class="cm-property">from</span>(<span class="cm-variable-2">d</span>,<span class="cm-number">1</span>,{<span class="cm-property">scale</span>:<span class="cm-number">0</span>,<span class="cm-property">ease</span>:<span class="cm-variable">Back</span>.<span class="cm-property">easeOut</span>.<span class="cm-property">config</span>(<span class="cm-number">.5</span>)}).<span class="cm-property">from</span>(<span class="cm-variable-2">k</span>,<span class="cm-number">2</span>,{<span class="cm-property">skewX</span>:<span class="cm-operator">-</span><span class="cm-number">40</span>,<span class="cm-property">scaleY</span>:<span class="cm-number">0</span>,<span class="cm-property">ease</span>:<span class="cm-variable">Power3</span>.<span class="cm-property">easeOut</span>},<span class="cm-string">"-=2"</span>).<span class="cm-property">from</span>(<span class="cm-variable-2">l</span>,<span class="cm-number">2</span>,{<span class="cm-property">skewX</span>:<span class="cm-number">40</span>,<span class="cm-property">scaleY</span>:<span class="cm-number">0</span>,<span class="cm-property">ease</span>:<span class="cm-variable">Power3</span>.<span class="cm-property">easeOut</span>},<span class="cm-string">"-=2"</span>).<span class="cm-property">staggerFrom</span>(<span class="cm-variable-2">C</span>,<span class="cm-number">1</span>,{<span class="cm-property">scaleX</span>:<span class="cm-number">0</span>},<span class="cm-number">.1</span>).<span class="cm-property">to</span>(<span class="cm-variable-2">m</span>,<span class="cm-number">.3</span>,{<span class="cm-property">alpha</span>:<span class="cm-number">0</span>,<span class="cm-property">delay</span>:<span class="cm-number">2</span>}).<span class="cm-property">to</span>(<span class="cm-variable-2">d</span>,<span class="cm-number">1</span>,{<span class="cm-property">scaleX</span>:<span class="cm-number">.67</span>}).<span class="cm-property">to</span>(<span class="cm-variable-2">d</span>,<span class="cm-number">1</span>,{<span class="cm-property">scaleY</span>:<span class="cm-number">.8</span>},<span class="cm-string">"-=1"</span>).<span class="cm-property">to</span>(<span class="cm-variable-2">w</span>,<span class="cm-number">1</span>,{<span class="cm-property">alpha</span>:<span class="cm-number">0</span>,<span class="cm-property">scale</span>:<span class="cm-number">.5</span>},<span class="cm-string">"-=1"</span>).<span class="cm-property">to</span>(<span class="cm-variable-2">n</span>,<span class="cm-number">1</span>,{<span class="cm-property">y</span>:<span class="cm-operator">-</span><span class="cm-number">20</span>,<span class="cm-property">scaleX</span>:<span class="cm-number">0</span>},<span class="cm-string">"-=1"</span>).<span class="cm-property">to</span>(<span class="cm-variable-2">k</span>,<span class="cm-number">1</span>,{<span class="cm-property">x</span>:<span class="cm-number">40</span>,<span class="cm-property">transformOrigin</span>:<span class="cm-string">"50% 50%"</span>,</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-property">scaleY</span>:<span class="cm-number">.85</span>},<span class="cm-string">"-=1"</span>).<span class="cm-property">to</span>(<span class="cm-variable-2">l</span>,<span class="cm-number">1</span>,{<span class="cm-property">x</span>:<span class="cm-operator">-</span><span class="cm-number">40</span>,<span class="cm-property">transformOrigin</span>:<span class="cm-string">"50% 50%"</span>,<span class="cm-property">scaleY</span>:<span class="cm-number">.85</span>},<span class="cm-string">"-=1"</span>).<span class="cm-property">set</span>(<span class="cm-variable-2">x</span>,{<span class="cm-property">alpha</span>:<span class="cm-number">0</span>}).<span class="cm-property">from</span>(<span class="cm-variable-2">b</span>,<span class="cm-number">1</span>,{<span class="cm-property">scale</span>:<span class="cm-number">1.1</span>,<span class="cm-property">alpha</span>:<span class="cm-number">0</span>},<span class="cm-string">"-=1"</span>).<span class="cm-property">to</span>(<span class="cm-variable-2">b</span>,<span class="cm-number">2</span>,{<span class="cm-property">rotation</span>:<span class="cm-number">0</span>,<span class="cm-property">delay</span>:<span class="cm-number">2</span>,<span class="cm-property">ease</span>:<span class="cm-variable">Anticipate</span>.<span class="cm-property">easeOut</span>}).<span class="cm-property">staggerFrom</span>([<span class="cm-variable-2">p</span>,<span class="cm-variable-2">q</span>],<span class="cm-number">.5</span>,{<span class="cm-property">scale</span>:<span class="cm-number">0</span>,<span class="cm-property">ease</span>:<span class="cm-variable">Back</span>.<span class="cm-property">easeOut</span>},<span class="cm-number">.1</span>,<span class="cm-string">"-=1"</span>).<span class="cm-property">from</span>(<span class="cm-variable-2">e</span>,<span class="cm-number">2</span>,{<span class="cm-property">rotation</span>:<span class="cm-number">90</span>,<span class="cm-property">scaleX</span>:<span class="cm-number">1.33</span>,<span class="cm-property">scaleY</span>:<span class="cm-number">.8</span>,<span class="cm-property">ease</span>:<span class="cm-variable">Power3</span>.<span class="cm-property">easeInOut</span>},<span class="cm-string">"-=0"</span>).<span class="cm-property">to</span>([<span class="cm-variable-2">p</span>,<span class="cm-variable-2">q</span>],<span class="cm-number">.5</span>,{<span class="cm-property">scale</span>:<span class="cm-number">0</span>,<span class="cm-property">delay</span>:<span class="cm-number">2</span>}).<span class="cm-property">to</span>(<span class="cm-variable-2">b</span>,<span class="cm-number">1</span>,{<span class="cm-property">scaleX</span>:<span class="cm-number">.45</span>}).<span class="cm-property">to</span>(<span class="cm-variable-2">b</span>,<span class="cm-number">1</span>,{<span class="cm-property">scaleY</span>:<span class="cm-number">.7</span>},<span class="cm-string">"-=1"</span>).<span class="cm-property">to</span>(<span class="cm-variable-2">e</span>,<span class="cm-number">1</span>,{<span class="cm-property">y</span>:<span class="cm-operator">-</span><span class="cm-number">5</span>},<span class="cm-string">"-=1"</span>).<span class="cm-property">to</span>(<span class="cm-variable-2">y</span>,<span class="cm-number">.5</span>,{<span class="cm-property">scaleY</span>:<span class="cm-number">.92</span>,<span class="cm-property">y</span>:<span class="cm-number">4</span>},<span class="cm-string">"-=0.5"</span>).<span class="cm-property">set</span>(<span class="cm-variable-2">r</span>,{<span class="cm-property">alpha</span>:<span class="cm-number">1</span>}).<span class="cm-property">set</span>([<span class="cm-variable-2">b</span>,<span class="cm-variable-2">e</span>],{<span class="cm-property">alpha</span>:<span class="cm-number">0</span>}).<span class="cm-property">staggerFrom</span>([<span class="cm-variable-2">z</span>,</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">A</span>,<span class="cm-variable-2">a</span>],<span class="cm-number">1</span>,{<span class="cm-property">scale</span>:<span class="cm-number">0</span>,<span class="cm-property">ease</span>:<span class="cm-variable">Back</span>.<span class="cm-property">easeOut</span>},<span class="cm-number">.1</span>).<span class="cm-property">to</span>(<span class="cm-variable-2">r</span>,<span class="cm-number">2</span>,{<span class="cm-property">y</span>:<span class="cm-number">80</span>,<span class="cm-property">delay</span>:<span class="cm-number">2</span>,<span class="cm-property">ease</span>:<span class="cm-variable">Back</span>.<span class="cm-property">easeIn</span>.<span class="cm-property">config</span>(<span class="cm-number">2</span>)});<span class="cm-variable">TweenMax</span>.<span class="cm-property">set</span>(<span class="cm-string">"svg"</span>,{<span class="cm-property">visibility</span>:<span class="cm-string">"visible"</span>})})();</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom: 0px solid transparent; top: 1445px;"></div><div class="CodeMirror-gutters" style="height: 1458px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div>
+<div class="error-bar" id="error-bar-js">
+<span class="error-icon" data-type="js">
+!
+</span>
+</div>
+</div>
+</div>
+</div>
+<div id="resizer" class="resizer"><span></span><div id="width-readout" class="width-readout">1536px</div></div>
+<section id="drawer" class="drawer comments">
+</section>
+<div class="output-container">
+<div class="output-sizer">
+<div id="result_div" class="result">
+<iframe id="result" name="CodePen" src="./All Devices in SVG_files/WvJMXP.html" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" scrolling="auto" allowtransparency="true" allowpaymentrequest="true" allowfullscreen="true" class="result-iframe ">
+          </iframe>
+<div id="asset-bin-goes-here"></div>
+<div id="editor-drag-cover" class="drag-cover"></div>
+</div>
+<div id="box-console" class="box box-console">
+<div class="editor-resizer editor-resizer-console" title="Drag to resize. Double-click to expand."></div>
+<div class="powers">
+<div class="powers-drag-handle" title="Drag to resize. Double-click to expand."></div>
+<div class="editor-actions-left">
+<h2 class="box-title"><span class="box-title-name">Console</span></h2>
+</div>
+<div class="editor-actions-right">
+<button class="button button-medium mini-button console-clear-button" title="Clear">
+Clear
+</button>
+<button class="button button-medium mini-button close-editor-button" data-type="console" title="Close">
+<svg class="icon-x">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+</button>
+</div>
+</div>
+<div class="console-wrap">
+<div class="console-entries short-no-scroll"></div>
+<div class="console-command-line">
+<span class="console-arrow forwards"></span>
+<textarea class="console-command-line-input auto-expand" rows="1" data-min-rows="1"></textarea>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer id="react-pen-footer" class="site-footer editor-footer"><div class="footer-left"><div class="footer-actions-menu"><button id="footer-button" aria-expanded="false" class="button icon-button button button-medium toggle-footer-menu-button
+              
+            "><svg width="20" height="20" class=" icon icon-arrow-down-mini"><use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use></svg></button><div class="footer-actions" data-expanded="false"><button class="button mini-button console-toggle-button">Console</button><button id="assets-link" class="button mini-button assets-button">Assets</button><button class="button mini-button" data-id="editor-comments-button">Comments</button><button title="Keyboard Shortcuts" class="button mini-button keyboard-commands-button"><span>Ctrl</span></button></div><select name="zoom-choice" data-placeholder="Zoom Scale..." class="button mini-button zoom-select"><option value="1.0" class="option-green" selected="">1.0×</option><option value="0.5" class="option-green">0.5×</option><option value="0.25" class="option-green">0.25×</option></select></div></div><div class="footer-right"><button class="button mini-button embed-builder-button">Embed</button><button data-test-id="export-panel-button" class="button mini-button export-button">Export </button><div id="export-panel" data-test-id="export-panel" class="export-panel ExportPanel_root-2-_BS"><section class="share-actions share-section"><h4>Export <a href="https://blog.codepen.io/documentation/features/exporting-pens/" class="inline-q" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" class=" icon icon-help"><use xlink:href="/svg_sprite?v=8885a907#help"></use></svg></a></h4><a class="button embed-builder-button" href="https://codepen.io/chrisgannon/pen/WvJMXP#0" data-test-id="export-embed"><svg width="16" height="16" class=" icon icon-embed-badge"><use xlink:href="/svg_sprite?v=8885a907#embed-badge"></use></svg>Embed Pen</a><button data-test-id="export-zip" data-url="/ajax/upgrades/zip" class="button button-fullwidth upsell"><svg width="16" height="16" class=" icon icon-zip-badge"><use xlink:href="/svg_sprite?v=8885a907#zip-badge"></use></svg>Export .zip</button><div class="ExportPanel_fancyProArea-2Axi4"><span class="badge badge-pro ExportPanel_badgePro-3S1Gy" data-test-id="pro-badge">PRO</span></div><button data-test-id="export-zip-with-build" class="button button-fullwidth"><svg width="16" height="16" class=" icon icon-zip-badge"><use xlink:href="/svg_sprite?v=8885a907#zip-badge"></use></svg>.zip with Build Process </button></section></div><button class="button mini-button sharing-button">Share</button><div id="sharing-panel" class="sharing-panel"><ul id="share-buttons" class="share-buttons share-section"><li><a class="button " href="https://twitter.com/intent/tweet?text=All%20Devices%20in%20SVG&amp;url=https://codepen.io/chrisgannon/pen/WvJMXP&amp;via=CodePen" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" class=" icon icon-twitter"><use xlink:href="/svg_sprite?v=8885a907#twitter"></use></svg>Share on Twitter</a></li><li><a class="button " href="https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/chrisgannon/pen/WvJMXP" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" class=" icon icon-facebook"><use xlink:href="/svg_sprite?v=8885a907#facebook"></use></svg>Share on Facebook</a></li><li><a class="button " href="https://dev.to/new?prefill=---%5Cn%20title:%20All%20Devices%20in%20SVG%5Cn%20published:%20false%5Cn%20tags:%20codepen%5Cn%20---%5Cn%20%5Cn%20%3Cp%3EA%20morphing%20animation%20to%20represent%20different%20devices.%0AIf%20you%20like%20this%20you%20can%20buy%20it%20%3Ca%20href%3D%22https%3A%2F%2Fgannon.tv%2Fproducts%2Fmorphing-devices%22%3Ehere%3C%2Fa%3E%3C%2Fp%3E%5Cn%20%5Cn%20%7B%25%20codepen%20https://codepen.io%2Fchrisgannon%2Fpen%2FWvJMXP%20%25%7D%5Cn" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" class=" icon icon-dev"><use xlink:href="/svg_sprite?v=8885a907#dev"></use></svg>Share on DEV</a></li></ul></div></div></footer>
+<div id="keycommands" class="modal modal-neutral">
+<section class="editor-commands" style="padding-right: 10px;">
+<h2>Editor Commands</h2>
+<div class="key-group">
+<kbd class="command-no-mod">
+<span class="pc_only">Ctrl</span>
+<span class="mac_only">Ctrl</span>
+Space
+</kbd>
+Autocomplete (if available)
+</div>
+<div class="key-group">
+<kbd class="command">F</kbd>
+Find
+</div>
+<div class="key-group">
+<kbd class="command">G</kbd>
+Find Next
+</div>
+<div class="key-group">
+<kbd class="command">⇧G</kbd>
+Find Previous
+</div>
+<div class="key-group">
+<span class="command pc_only">Shift F</span>
+<span class="command mac_only">Opt F</span>
+Find &amp; Replace
+</div>
+<div class="key-group">
+<kbd class="command">[</kbd>
+Indent Code Right
+</div>
+<div class="key-group">
+<kbd class="command">]</kbd>
+Indent Code Left
+</div>
+<div class="key-group">
+<kbd class="command-no-mod">⇧ Tab</kbd>
+Auto Indent Code
+</div>
+<div class="key-group">
+<kbd class="command">/</kbd>
+Line Comment
+</div>
+<div class="key-group">
+<kbd class="command">
+<span class="pc_only">⇧</span>
+<span class="mac_only">Opt</span>
+/
+</kbd>
+Block Comment
+</div>
+<p style="margin: 20px 0 0 0;">Also see: <a href="https://blog.codepen.io/documentation/features/tab-triggers/" target="_blank" rel="noopener">Tab Triggers</a></p>
+</section>
+<section class="editor-commands">
+<h2>HTML Specific</h2>
+<div class="key-group">
+<kbd class="command">⇧A</kbd>
+Wrap With...
+</div>
+<h2>Misc</h2>
+<div class="key-group">
+<kbd class="command">⇧7</kbd>
+Re-run Preview
+</div>
+<div class="key-group">
+<kbd class="command">⇧8</kbd>
+Clear All Analyze Errors
+</div>
+<div class="key-group">
+<kbd class="command">⇧9</kbd>
+Open This Dialog
+</div>
+<h2>Pen Actions</h2>
+<div class="key-group">
+<kbd class="command">P</kbd>
+Create New Pen
+</div>
+<div class="key-group">
+<kbd class="command">S</kbd>
+Save
+</div>
+<div class="key-group">
+<kbd class="command">I</kbd>
+Info Panel (if owned)
+</div>
+</section>
+</div>
+<div id="popup-overlay" class="overlay popup-overlay"></div>
+<div id="modal-overlay" class="overlay modal-overlay"></div>
+<div id="react-popups" class="react-popups"></div>
+<noscript>
+
+  <input type="checkbox" class="modal-closing-trick" id="modal-closing-trick">
+
+  <div class="overlay noscript-overlay" style="display: block;"></div>
+
+  <div class="modal modal-message group modal-warning">
+
+    <div class="modal-title">CodePen requires JavaScript to render the code and preview areas in this view.</div>
+
+    <p>Trying <a href="https://codepen.io/chrisgannon/debug/WvJMXP">viewing this Pen in Debug Mode</a>, which is the preview area without any iframe and does not require JavaScript. Although what the preview is of might!</p>
+
+    <p>Need to know how to enable JavaScript? <a href="http://enable-javascript.com/" target="_blank" rel="noopener">Go here.</a></p>
+
+    <label class="button button-medium" for="modal-closing-trick">Close this, use anyway.</label>
+
+  </div>
+
+</noscript>
+<input type="hidden" id="init-data" value="{&quot;__browser&quot;:{&quot;device&quot;:&quot;unknown&quot;,&quot;mobile&quot;:null,&quot;name&quot;:&quot;chrome&quot;,&quot;platform&quot;:&quot;pc&quot;,&quot;version&quot;:&quot;79&quot;},&quot;__analytics&quot;:{&quot;controllerActionName&quot;:&quot;show&quot;,&quot;controllerName&quot;:&quot;pen&quot;,&quot;enabled&quot;:true},&quot;__remote_addr&quot;:&quot;120.89.102.200&quot;,&quot;__CPDATA&quot;:{&quot;domain_iframe&quot;:&quot;https://cdpn.io&quot;,&quot;host&quot;:&quot;codepen.io&quot;,&quot;iframe_allow&quot;:&quot;geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media&quot;,&quot;iframe_sandbox&quot;:&quot;allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts&quot;},&quot;__env&quot;:&quot;production&quot;,&quot;__turnOffJS&quot;:false,&quot;__constants&quot;:{&quot;grid_iframe_sandbox_attributes&quot;:&quot;allow-scripts allow-pointer-lock allow-same-origin&quot;},&quot;__svg_sprite&quot;:&quot;/svg_sprite?v=8885a907&quot;,&quot;__user&quot;:{&quot;anon&quot;:true,&quot;base_url&quot;:&quot;/anon/&quot;,&quot;current_team_id&quot;:0,&quot;current_team_hashid&quot;:&quot;YdEzGn&quot;,&quot;hashid&quot;:&quot;VoDkNZ&quot;,&quot;id&quot;:1,&quot;itemType&quot;:&quot;user&quot;,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;owner_id&quot;:&quot;VoDkNZYdEzGn&quot;,&quot;paid&quot;:false,&quot;tier&quot;:0,&quot;username&quot;:&quot;anon&quot;},&quot;__firestore&quot;:{&quot;config&quot;:{&quot;apiKey&quot;:&quot;AIzaSyBgLAe7N_MdFpuVofMkcQLGwwhUu5tuxls&quot;,&quot;authDomain&quot;:&quot;codepen-store-production.firebaseapp.com&quot;,&quot;databaseURL&quot;:&quot;https://codepen-store-production.firebaseio.com&quot;,&quot;disabled&quot;:false,&quot;projectId&quot;:&quot;codepen-store-production&quot;},&quot;token&quot;:&quot;eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczovL2lkZW50aXR5dG9vbGtpdC5nb29nbGVhcGlzLmNvbS9nb29nbGUuaWRlbnRpdHkuaWRlbnRpdHl0b29sa2l0LnYxLklkZW50aXR5VG9vbGtpdCIsImNsYWltcyI6eyJvd25lcklkIjoiVm9Ea05aWWRFekduIiwiYWRtaW4iOmZhbHNlfSwiZXhwIjoxNTc5MzQxNzQyLCJpYXQiOjE1NzkzMzgxNDIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInN1YiI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInVpZCI6IlZvRGtOWiJ9.0LJUDsz9y0HEzeVFDy2Q8G7CmJHdtASSQX_yYIhPgkRNxLlGaXRBpIJdHITo61oR2rIX-x2vpDe0cUL-dA4oF6wwUIqJi_2D5AreGwM9aLme-3C0ekY7MLVGxGCtiMrkfWeaXO1Rj8JTe-SE2RG-a5qjBUtLNN20udZSGhvmf3xIfuHWXSNUEHF5tVkvI1ha7NXH9Z3B8_L39W3IttjqN8cjH209lnYCOf_AvyoWVuQjnbnv0AvbJFmwTns3yvaHuKu2GTDHU-5XI8hB4cVBnR9Bx4vpappou4mDlGJY9XSBnwghtxJZ47q7tTrPYYl3OKFvtqc1LHC5mphTs5jlAg&quot;},&quot;__graphql&quot;:{&quot;data&quot;:{&quot;sessionUser&quot;:{&quot;id&quot;:&quot;VoDkNZ&quot;,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;avatar80&quot;:&quot;https://static.codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png&quot;,&quot;avatar512&quot;:&quot;https://static.codepen.io/assets/avatars/user-avatar-512x512-6e240cf350d2f1cc07c2bed234c3a3bb5f1b237023c204c782622e80d6b212ba.png&quot;,&quot;canCreatePosts&quot;:false,&quot;currentContext&quot;:{&quot;id&quot;:&quot;VoDkNZ&quot;,&quot;baseUrl&quot;:&quot;/anon&quot;,&quot;title&quot;:&quot;Captain Anonymous&quot;,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;avatar80&quot;:&quot;https://static.codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png&quot;,&quot;avatar512&quot;:&quot;https://static.codepen.io/assets/avatars/user-avatar-512x512-6e240cf350d2f1cc07c2bed234c3a3bb5f1b237023c204c782622e80d6b212ba.png&quot;,&quot;username&quot;:&quot;anon&quot;,&quot;contextType&quot;:&quot;USER&quot;,&quot;projectLimitations&quot;:{&quot;projects&quot;:0,&quot;usedProjects&quot;:0,&quot;__typename&quot;:&quot;ProjectLimitations&quot;},&quot;privateByDefault&quot;:false,&quot;__typename&quot;:&quot;User&quot;},&quot;currentTeamId&quot;:null,&quot;baseUrl&quot;:&quot;/anon&quot;,&quot;username&quot;:&quot;anon&quot;,&quot;admin&quot;:false,&quot;anon&quot;:true,&quot;pro&quot;:false,&quot;verified&quot;:true,&quot;teams&quot;:[],&quot;permissions&quot;:{&quot;canCreatePrivate&quot;:false,&quot;__typename&quot;:&quot;UserPermissions&quot;},&quot;__typename&quot;:&quot;User&quot;}}},&quot;__pageType&quot;:&quot;pen&quot;,&quot;__jwt&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7InBhaWQiOmZhbHNlLCJ0ZWFtX2lkIjoiWWRFekduIiwidXNlcl9pZCI6IlZvRGtOWiIsInVzZXJuYW1lIjoiYW5vbiJ9LCJleHAiOjE1Nzk0MjQ1NDJ9.F3fDmxP3QhfDoheHUGj5QAb3EYmTjrvJD6pn1PjErRM&quot;,&quot;__boomboom&quot;:{&quot;serve_url&quot;:&quot;https://cdpn.io/boomboom/v2/index.html&quot;,&quot;store_url&quot;:&quot;https://cdpn.io/boomboom/v2/store&quot;},&quot;__preprocessors_url&quot;:&quot;https://wfwf9k3tn7.execute-api.us-west-2.amazonaws.com/production&quot;,&quot;__layoutType&quot;:null,&quot;__rtData&quot;:&quot;{\&quot;maxMembers\&quot;:0,\&quot;roomID\&quot;:\&quot;WvJMXP/live\&quot;,\&quot;roomType\&quot;:\&quot;live\&quot;,\&quot;updatedAt\&quot;:1538088690,\&quot;user\&quot;:{\&quot;id\&quot;:\&quot;VoDkNZ\&quot;,\&quot;hashid\&quot;:\&quot;VoDkNZ\&quot;,\&quot;name\&quot;:\&quot;Captain Anonymous\&quot;,\&quot;username\&quot;:\&quot;anon\&quot;,\&quot;role\&quot;:\&quot;editor\&quot;}}&quot;,&quot;__item&quot;:&quot;{\&quot;custom_screenshot\&quot;:null,\&quot;dependencies\&quot;:{},\&quot;editor_settings\&quot;:{\&quot;theme\&quot;:\&quot;twilight\&quot;,\&quot;html_pre_processor\&quot;:\&quot;none\&quot;,\&quot;css_pre_processor\&quot;:\&quot;none\&quot;,\&quot;css_starter\&quot;:\&quot;neither\&quot;,\&quot;css_prefix\&quot;:\&quot;neither\&quot;,\&quot;js_pre_processor\&quot;:\&quot;none\&quot;,\&quot;font_type\&quot;:\&quot;monaco\&quot;,\&quot;font_size\&quot;:\&quot;14\&quot;,\&quot;key_bindings\&quot;:\&quot;normal\&quot;,\&quot;indent_with\&quot;:\&quot;spaces\&quot;,\&quot;tab_size\&quot;:\&quot;2\&quot;,\&quot;auto_run\&quot;:true,\&quot;line_numbers\&quot;:true,\&quot;line_wrapping\&quot;:true,\&quot;code_folding\&quot;:true,\&quot;match_brackets\&quot;:true,\&quot;autocomplete\&quot;:false,\&quot;emmet_active\&quot;:true,\&quot;snippets\&quot;:{\&quot;markupSnippets\&quot;:{},\&quot;stylesheetSnippets\&quot;:{}},\&quot;auto_save\&quot;:true},\&quot;hashid\&quot;:\&quot;WvJMXP\&quot;,\&quot;itemType\&quot;:\&quot;pen\&quot;,\&quot;owner_id\&quot;:\&quot;emdbdzYdEzGn\&quot;,\&quot;resources\&quot;:[{\&quot;url\&quot;:\&quot;https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js\&quot;,\&quot;order\&quot;:0,\&quot;resource_type\&quot;:\&quot;js\&quot;,\&quot;par_content\&quot;:\&quot;\&quot;},{\&quot;url\&quot;:\&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/AnticipateEase.min.js\&quot;,\&quot;order\&quot;:1,\&quot;resource_type\&quot;:\&quot;js\&quot;,\&quot;par_content\&quot;:\&quot;\&quot;}],\&quot;tags\&quot;:[\&quot;svg\&quot;,\&quot;gsap\&quot;,\&quot;devices\&quot;,\&quot;laptop\&quot;,\&quot;mobile\&quot;],\&quot;id\&quot;:4296660,\&quot;user_id\&quot;:35984,\&quot;html\&quot;:\&quot;[[[https://codepen.io/chrisgannon/pen/3443855ffc8fdfb2a036cdc9f200e90c]]]\&quot;,\&quot;css\&quot;:\&quot;body{\\n  background-color:#7E82AB;\\n  overflow:hidden;\\n  display: flex;\\n  align-items: center;\\n  justify-content: center;   \\n}\\nbody, html {\\n    height: 100%;\\n    width: 100%;\\n    margin: 0;\\n    padding: 0;\\n}\\n\\nsvg{\\n  width:50%;\\n  height:50%;\\n  visibility:hidden;\\n}\\n\&quot;,\&quot;parent\&quot;:4206526,\&quot;js\&quot;:\&quot;(function(){var a=function(a){return document.querySelector(a)},t=document.querySelectorAll(\\\&quot;.monitorContentGroup path\\\&quot;);a(\\\&quot;.monitorGroup\\\&quot;);var f=a(\\\&quot;.monitorScreen\\\&quot;),g=a(\\\&quot;.monitorLogo\\\&quot;),h=a(\\\&quot;.monitorStand\\\&quot;),u=a(\\\&quot;.monitorStandShadow\\\&quot;),c=a(\\\&quot;.monitorBottom\\\&quot;),v=a(\\\&quot;.monitorEdge\\\&quot;),C=document.querySelectorAll(\\\&quot;.laptopContentGroup path\\\&quot;),w=a(\\\&quot;.laptopContentGroup\\\&quot;),x=a(\\\&quot;.laptopGroup\\\&quot;),d=a(\\\&quot;.laptopScreen\\\&quot;),k=a(\\\&quot;.laptopEdgeLeft\\\&quot;),l=a(\\\&quot;.laptopEdgeRight\\\&quot;),m=a(\\\&quot;.laptopTrackpad\\\&quot;),n=a(\\\&quot;.laptopBase\\\&quot;);document.querySelectorAll(\\\&quot;.tabletContentGroup path\\\&quot;);\\nvar e=a(\\\&quot;.tabletContentGroup\\\&quot;),b=a(\\\&quot;.tabletGroup\\\&quot;),p=a(\\\&quot;.tabletButton\\\&quot;),q=a(\\\&quot;.tabletCamera\\\&quot;),y=a(\\\&quot;.tabletScreen\\\&quot;),r=a(\\\&quot;.phoneGroup\\\&quot;),z=a(\\\&quot;.phoneButton\\\&quot;),A=a(\\\&quot;.phoneCamera\\\&quot;),a=a(\\\&quot;.phoneSpeaker\\\&quot;);TweenMax.set([c],{transformOrigin:\\\&quot;50% 100%\\\&quot;});TweenMax.set([h,n,y],{transformOrigin:\\\&quot;50% 0%\\\&quot;});TweenMax.set([g,f,d,m,b,x,p,q,e,z,A,a,w,r],{transformOrigin:\\\&quot;50% 50%\\\&quot;});TweenMax.set([k,l],{transformOrigin:\\\&quot;0% 100%\\\&quot;});TweenMax.set(b,{rotation:-90});var B=new TimelineMax({repeat:-1,delay:1,yoyo:!1,paused:!1});\\nB.timeScale(3);B.from(c,1,{scaleY:0,ease:Power1.easeOut}).from(h,1,{y:-70,ease:Power1.easeOut},\\\&quot;-=1\\\&quot;).from(u,.5,{alpha:0,ease:Power1.easeIn},\\\&quot;-=0.5\\\&quot;).from(v,1,{y:330},\\\&quot;-=0.25\\\&quot;).from(f,2,{y:330,ease:Power1.easeOut},\\\&quot;-=1\\\&quot;).staggerFrom(t,1,{scaleX:0},.1,\\\&quot;-=0.51\\\&quot;).from(g,1,{scale:0,ease:Back.easeOut.config(2)}).staggerTo(t,1,{alpha:0,delay:2},.1).to(f,1,{y:330,ease:Power1.easeIn},\\\&quot;-=1\\\&quot;).to(v,1,{y:330,ease:Power1.easeIn},\\\&quot;-=0.75\\\&quot;).to(c,1,{scaleX:.69,y:-23}).to(c,1,{scaleY:.45,alpha:1},\\\&quot;-=1\\\&quot;).set(c,{alpha:0}).to(g,\\n.5,{scale:0,ease:Back.easeIn},\\\&quot;-=1\\\&quot;).to(h,1,{y:-120},\\\&quot;-=1.5\\\&quot;).to(u,.5,{alpha:0},\\\&quot;-=1.5\\\&quot;).from(n,1,{alpha:0},\\\&quot;-=1\\\&quot;).from(m,1,{scaleX:0},\\\&quot;-=1\\\&quot;).from(d,1,{scale:0,ease:Back.easeOut.config(.5)}).from(k,2,{skewX:-40,scaleY:0,ease:Power3.easeOut},\\\&quot;-=2\\\&quot;).from(l,2,{skewX:40,scaleY:0,ease:Power3.easeOut},\\\&quot;-=2\\\&quot;).staggerFrom(C,1,{scaleX:0},.1).to(m,.3,{alpha:0,delay:2}).to(d,1,{scaleX:.67}).to(d,1,{scaleY:.8},\\\&quot;-=1\\\&quot;).to(w,1,{alpha:0,scale:.5},\\\&quot;-=1\\\&quot;).to(n,1,{y:-20,scaleX:0},\\\&quot;-=1\\\&quot;).to(k,1,{x:40,transformOrigin:\\\&quot;50% 50%\\\&quot;,\\nscaleY:.85},\\\&quot;-=1\\\&quot;).to(l,1,{x:-40,transformOrigin:\\\&quot;50% 50%\\\&quot;,scaleY:.85},\\\&quot;-=1\\\&quot;).set(x,{alpha:0}).from(b,1,{scale:1.1,alpha:0},\\\&quot;-=1\\\&quot;).to(b,2,{rotation:0,delay:2,ease:Anticipate.easeOut}).staggerFrom([p,q],.5,{scale:0,ease:Back.easeOut},.1,\\\&quot;-=1\\\&quot;).from(e,2,{rotation:90,scaleX:1.33,scaleY:.8,ease:Power3.easeInOut},\\\&quot;-=0\\\&quot;).to([p,q],.5,{scale:0,delay:2}).to(b,1,{scaleX:.45}).to(b,1,{scaleY:.7},\\\&quot;-=1\\\&quot;).to(e,1,{y:-5},\\\&quot;-=1\\\&quot;).to(y,.5,{scaleY:.92,y:4},\\\&quot;-=0.5\\\&quot;).set(r,{alpha:1}).set([b,e],{alpha:0}).staggerFrom([z,\\nA,a],1,{scale:0,ease:Back.easeOut},.1).to(r,2,{y:80,delay:2,ease:Back.easeIn.config(2)});TweenMax.set(\\\&quot;svg\\\&quot;,{visibility:\\\&quot;visible\\\&quot;})})();\&quot;,\&quot;html_pre_processor\&quot;:\&quot;none\&quot;,\&quot;css_pre_processor\&quot;:\&quot;none\&quot;,\&quot;js_pre_processor\&quot;:\&quot;none\&quot;,\&quot;html_classes\&quot;:\&quot;\&quot;,\&quot;css_starter\&quot;:\&quot;neither\&quot;,\&quot;css_prefix_free\&quot;:null,\&quot;css_external\&quot;:null,\&quot;js_library\&quot;:null,\&quot;js_modernizr\&quot;:null,\&quot;js_external\&quot;:null,\&quot;created_at\&quot;:\&quot;2015-07-10T14:17:49.000Z\&quot;,\&quot;updated_at\&quot;:\&quot;2018-09-27T22:51:30.000Z\&quot;,\&quot;session_hash\&quot;:\&quot;384181548c8295f0036d9c197dddf9c1\&quot;,\&quot;title\&quot;:\&quot;All Devices in SVG\&quot;,\&quot;description\&quot;:\&quot;A morphing animation to represent different devices.\\nIf you like this you can buy it [here](https://gannon.tv/products/morphing-devices)\&quot;,\&quot;slug_hash\&quot;:\&quot;WvJMXP\&quot;,\&quot;head\&quot;:\&quot;&lt;meta name=\\\&quot;viewport\\\&quot; content=\\\&quot;width=device-width, initial-scale=1\\\&quot;&gt;\\n&lt;link rel=\\\&quot;tracker\\\&quot; sizes=\\\&quot;1x1\\\&quot; href=\\\&quot;https://static1.squarespace.com/static/585a4892bebafba69928fcd7/58d854001e5b6cc3c401841b/58d854938419c267b73956cb/1490572452018/b.gif\\\&quot;&gt;\&quot;,\&quot;private\&quot;:false,\&quot;has_animation\&quot;:true,\&quot;css_pre_processor_lib\&quot;:\&quot;\&quot;,\&quot;checksum\&quot;:2399266084,\&quot;screenshot_uuid\&quot;:\&quot;43031d09-4550-4d6c-82e1-d3dc8006a632\&quot;,\&quot;team_id\&quot;:0,\&quot;css_prefix\&quot;:\&quot;neither\&quot;,\&quot;template\&quot;:false,\&quot;js_module\&quot;:false}&quot;,&quot;__profiled&quot;:{&quot;id&quot;:35984,&quot;hashid&quot;:&quot;emdbdz&quot;,&quot;name&quot;:&quot;Chris Gannon&quot;,&quot;username&quot;:&quot;chrisgannon&quot;,&quot;type&quot;:&quot;user&quot;,&quot;is_team&quot;:false,&quot;base_url&quot;:&quot;/chrisgannon&quot;},&quot;__preprocessors&quot;:{&quot;html&quot;:{&quot;default&quot;:&quot;none&quot;,&quot;preprocessors&quot;:[&quot;markdown&quot;,&quot;slim&quot;,&quot;haml&quot;,&quot;pug&quot;],&quot;pretty_syntaxes&quot;:{&quot;none&quot;:&quot;None&quot;,&quot;haml&quot;:&quot;Haml&quot;,&quot;markdown&quot;:&quot;Markdown&quot;,&quot;slim&quot;:&quot;Slim&quot;,&quot;pug&quot;:&quot;Pug&quot;},&quot;syntaxes&quot;:[&quot;none&quot;,&quot;html&quot;,&quot;markdown&quot;,&quot;slim&quot;,&quot;haml&quot;,&quot;pug&quot;]},&quot;css&quot;:{&quot;bases&quot;:[&quot;normalize&quot;,&quot;reset&quot;,&quot;neither&quot;],&quot;default_base&quot;:&quot;neither&quot;,&quot;default_prefix&quot;:&quot;neither&quot;,&quot;default&quot;:&quot;none&quot;,&quot;exclude_emmet_syntaxes&quot;:[&quot;none&quot;,&quot;postcss&quot;],&quot;par_suffixes&quot;:[&quot;less&quot;,&quot;scss&quot;,&quot;sass&quot;,&quot;styl&quot;],&quot;prefixes&quot;:[&quot;autoprefixer&quot;,&quot;prefixfree&quot;,&quot;neither&quot;],&quot;preprocessors&quot;:[&quot;sass&quot;,&quot;scss&quot;,&quot;less&quot;,&quot;stylus&quot;,&quot;postcss&quot;],&quot;pretty_syntaxes&quot;:{&quot;none&quot;:&quot;None&quot;,&quot;less&quot;:&quot;Less&quot;,&quot;scss&quot;:&quot;SCSS&quot;,&quot;sass&quot;:&quot;Sass&quot;,&quot;stylus&quot;:&quot;Stylus&quot;,&quot;postcss&quot;:&quot;PostCSS&quot;},&quot;syntaxes&quot;:[&quot;none&quot;,&quot;css&quot;,&quot;sass&quot;,&quot;scss&quot;,&quot;less&quot;,&quot;stylus&quot;,&quot;postcss&quot;]},&quot;js&quot;:{&quot;default&quot;:&quot;none&quot;,&quot;par_suffixes&quot;:[&quot;babel&quot;,&quot;ts&quot;,&quot;coffee&quot;,&quot;ls&quot;],&quot;preprocessors&quot;:[&quot;coffeescript&quot;,&quot;livescript&quot;,&quot;typescript&quot;,&quot;babel&quot;],&quot;pretty_syntaxes&quot;:{&quot;none&quot;:&quot;None&quot;,&quot;babel&quot;:&quot;Babel&quot;,&quot;typescript&quot;:&quot;TypeScript&quot;,&quot;coffeescript&quot;:&quot;CoffeeScript&quot;,&quot;livescript&quot;:&quot;LiveScript&quot;},&quot;syntaxes&quot;:[&quot;none&quot;,&quot;js&quot;,&quot;coffee&quot;,&quot;coffeescript&quot;,&quot;livescript&quot;,&quot;typescript&quot;,&quot;babel&quot;]}},&quot;__debug_redirect&quot;:&quot;https://codepen.io/chrisgannon/debug/WvJMXP&quot;,&quot;__npm_base_url&quot;:null,&quot;__feature_npm_enabled&quot;:false,&quot;__export_service_url&quot;:&quot;https://codepen.io/api/export&quot;,&quot;__editor_config&quot;:{&quot;id&quot;:&quot;classic&quot;,&quot;editors&quot;:[{&quot;id&quot;:&quot;html&quot;,&quot;type&quot;:&quot;html&quot;,&quot;name&quot;:&quot;HTML&quot;,&quot;settings&quot;:[{&quot;id&quot;:&quot;processor&quot;,&quot;name&quot;:&quot;HTML Preprocessor&quot;,&quot;type&quot;:&quot;select&quot;,&quot;help&quot;:{&quot;title&quot;:&quot;ABOUT HTML PREPROCESSORS&quot;,&quot;text&quot;:&quot;HTML preprocessors can make writing HTML more powerful or convenient. For instance, Markdown is designed to be easier to write and read for text documents and you could write a loop in Pug.&quot;},&quot;visible&quot;:true,&quot;values&quot;:[{&quot;id&quot;:&quot;none&quot;,&quot;name&quot;:&quot;None&quot;,&quot;value&quot;:&quot;none&quot;,&quot;default&quot;:true},{&quot;id&quot;:&quot;haml&quot;,&quot;name&quot;:&quot;Haml&quot;,&quot;value&quot;:&quot;haml&quot;},{&quot;id&quot;:&quot;markdown&quot;,&quot;name&quot;:&quot;Markdown&quot;,&quot;value&quot;:&quot;markdown&quot;},{&quot;id&quot;:&quot;slim&quot;,&quot;name&quot;:&quot;Slim&quot;,&quot;value&quot;:&quot;slim&quot;},{&quot;id&quot;:&quot;pug&quot;,&quot;name&quot;:&quot;Pug&quot;,&quot;value&quot;:&quot;pug&quot;}]},{&quot;id&quot;:&quot;html_classes&quot;,&quot;name&quot;:&quot;Add Class(es) to &lt;html&gt;&quot;,&quot;type&quot;:&quot;input&quot;,&quot;placeholder&quot;:&quot;e.g. single post post-1234&quot;,&quot;help&quot;:{&quot;title&quot;:&quot;Adding Classes&quot;,&quot;text&quot;:&quot;In CodePen, whatever you write in the HTML editor is what goes within the &lt;body&gt; tags in a basic HTML5 template. So you don&#39;t have access to higher-up elements like the &lt;html&gt; tag. If you want to add classes there that can affect the whole document, this is the place to do it.&quot;},&quot;visible&quot;:true},{&quot;id&quot;:&quot;head&quot;,&quot;name&quot;:&quot;Stuff for &lt;head&gt;&quot;,&quot;type&quot;:&quot;textarea&quot;,&quot;placeholder&quot;:&quot;e.g. &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;&quot;,&quot;help&quot;:{&quot;title&quot;:&quot;About the &lt;Head&gt;&quot;,&quot;text&quot;:&quot;In CodePen, whatever you write in the HTML editor is what goes within the &lt;body&gt; tags in a basic HTML5 template. If you need things in the &lt;head&gt; of the document, put that code here.&quot;},&quot;visible&quot;:true}],&quot;actions&quot;:[{&quot;id&quot;:&quot;tidy_html&quot;,&quot;name&quot;:&quot;Tidy HTML&quot;},{&quot;id&quot;:&quot;analyze_html&quot;,&quot;name&quot;:&quot;Analyze HTML&quot;},{&quot;id&quot;:&quot;maximize_html_editor&quot;,&quot;name&quot;:&quot;Maximize HTML Editor&quot;},{&quot;id&quot;:&quot;minimize_html_editor&quot;,&quot;name&quot;:&quot;Minimize HTML Editor&quot;},{&quot;id&quot;:&quot;fold_all&quot;,&quot;name&quot;:&quot;Fold All&quot;},{&quot;id&quot;:&quot;unfold_all&quot;,&quot;name&quot;:&quot;Unfold All&quot;}]},{&quot;id&quot;:&quot;css&quot;,&quot;type&quot;:&quot;css&quot;,&quot;name&quot;:&quot;CSS&quot;},{&quot;id&quot;:&quot;js&quot;,&quot;type&quot;:&quot;javascript&quot;,&quot;name&quot;:&quot;JS&quot;}]},&quot;__packages_domain&quot;:&quot;https://bundles-development.cdpn.io&quot;,&quot;__packages_enabled&quot;:false,&quot;__embed_modal_script&quot;:&quot;https://static.codepen.io/assets/embed/modal/embed_modal-22a75521c4a84703eaa526f47f0674d3e40fd45f72d22668ada736045a795179.js&quot;,&quot;__run_mode_script&quot;:&quot;https://static.codepen.io/assets/libs/codemirror/addon/runmode/runmode-71408fc65dcc694b1f598f08398b08c8f4494f90b73c64cd4ecf01eaaf3a65d7.js&quot;,&quot;__runtime_js&quot;:&quot;https://static.codepen.io/assets/common/runtime-78f7737f2b92b1b279253c92344b93db2bdf0e3193c90dae7d462d102b33c722.js&quot;,&quot;__standalone_run_mode_script&quot;:&quot;https://static.codepen.io/assets/libs/codemirror/addon/runmode/runmode-standalone-e82db9c70d13c4fd77beef3e400ebba56987206b1e5bb9e39f28c2044991b089.js&quot;,&quot;__syntax_highlighting_script&quot;:&quot;https://static.codepen.io/assets/comments/syntax_highlight_comments.js&quot;,&quot;__eijs&quot;:&quot;https://static.codepen.io/assets/embed/ei.js&quot;,&quot;__favicon_mask_icon&quot;:&quot;https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg&quot;,&quot;__favicon_shortcut_icon&quot;:&quot;https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico&quot;,&quot;__path_to_iframe_console_runner&quot;:&quot;https://static.codepen.io/assets/editor/iframe/iframeConsoleRunner-dc0d50e60903d6825042d06159a8d5ac69a6c0e9bcef91e3380b17617061ce0f.js&quot;,&quot;__path_to_iframe_refresh_css&quot;:&quot;https://static.codepen.io/assets/editor/iframe/iframeRefreshCSS-9a987901e00d6923a532b8e149a50c27b38cffc6a3aa17d7e455fd14fc8778fe.js&quot;,&quot;__path_to_iframe_runtime_errors&quot;:&quot;https://static.codepen.io/assets/editor/iframe/iframeRuntimeErrors-29f059e28a3c6d3878960591ef98b1e303c1fe1935197dae7797c017a3ca1e82.js&quot;,&quot;__path_to_processor_worker&quot;:&quot;https://static.codepen.io/assets/packs/router.js&quot;,&quot;__path_to_stop_execution_on_timeout&quot;:&quot;https://static.codepen.io/assets/common/stopExecutionOnTimeout-30d18ea41045577cdb11c797602d08e0b9c2fa407c8b81058b1c422053ad8041.js&quot;,&quot;__path_to_webpack_runtime&quot;:&quot;https://static.codepen.io/assets/common/runtime-78f7737f2b92b1b279253c92344b93db2bdf0e3193c90dae7d462d102b33c722.js&quot;,&quot;__pen_normalize_css_url&quot;:&quot;https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css&quot;,&quot;__pen_prefix_free_url&quot;:&quot;https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js&quot;,&quot;__pen_reset_css_url&quot;:&quot;https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css&quot;,&quot;__cdn_css_url&quot;:&quot;https://static.codepen.io/assets/editor/other/cdn/cdncss_data-b2a6b09b819f5d5cad330bde53c28db816c78598cbec7c82693642c0f8198d81.json&quot;,&quot;__cdn_js_url&quot;:&quot;https://static.codepen.io/assets/editor/other/cdn/cdnjs_data-1ba370c14f6d31ca1535a87b2e3e151cf4b60d08485aba18ef86b137051f0175.json&quot;,&quot;__theme_url_twilight&quot;:&quot;https://static.codepen.io/assets/editor/themes/twilight-1384711dde26dace772d921a7aec83b44bfe4bfda4f990cf1c049737be68ea70.css&quot;,&quot;__theme_url_solarized_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/solarized-dark-fb063fc30fc6a9df248c256ebf03ea7d75a032d61e69adb3ade1705ded9b9822.css&quot;,&quot;__theme_url_tomorrow_night&quot;:&quot;https://static.codepen.io/assets/editor/themes/tomorrow-night-27afa0d3af123785b826e3b55356805a6a96a2d861d3b906a0fd24b1a02d6456.css&quot;,&quot;__theme_url_oceanic_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/oceanic-dark-87d91cae725b6ecb7ca7e42a58974a2b0d2ac490adc8e4d6930d0ab81cc2b997.css&quot;,&quot;__theme_url_panda&quot;:&quot;https://static.codepen.io/assets/editor/themes/panda-b14f355bdaff2b6e80f6e4829c8dbd08e68723c3b50636e2409f230f11afd234.css&quot;,&quot;__theme_url_duotone_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/duotone-dark-35fc919b9a74eeec773475a2a49b6a7dce3e9401eb9201fc0d4fd5042b965ba4.css&quot;,&quot;__theme_url_highcontrast_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/highcontrast-dark-ef436ca908e609443cab2eb294588a92486768b5819c605bff7d8efd6af79d77.css&quot;,&quot;__theme_url_classic&quot;:&quot;https://static.codepen.io/assets/editor/themes/classic-3e3d890673f75a82b6ea68e92a7dce1b4367251556014ac92a6217c3362b4c4c.css&quot;,&quot;__theme_url_solarized_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/solarized-light-1348cd2b127e04c6b636baa036564b03774adf360bb66b916c8dc0b19fcbe5d7.css&quot;,&quot;__theme_url_xq_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/xq-light-05d05f245a808f1ab7874861113fef10bef685811fec13847e89b831da3755b1.css&quot;,&quot;__theme_url_oceanic_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/oceanic-light-79ed4e7b1cafc3f1dfc297ba3b91c178c233b46ce2c05f00995f79cd7d6303da.css&quot;,&quot;__theme_url_mdn_like&quot;:&quot;https://static.codepen.io/assets/editor/themes/mdn-like-24f4b830253bc2354f4c51c045e0762d1904fc6dca1abf526f656bb8df8e5d32.css&quot;,&quot;__theme_url_duotone_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/duotone-light-ea63de12ae35624ab7b120f9f74bfc0abf5710e987f6f69ee98b822086464b75.css&quot;,&quot;__theme_url_highcontrast_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/highcontrast-light-2d4f12da54fe042a846a6195f28daceadb47c3893b3ff2ff559d86685425e89e.css&quot;,&quot;__theme_url_scoped_twilight&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/twilight-9c51d766f1e78475a9b3c9e394d4d03137dfda0a96b44baa8191deb143562cca.css&quot;,&quot;__theme_url_scoped_solarized_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/solarized-dark-e77de3c5c42818438b0bc3d796bb4e0be755c3704012949293288feade9f4649.css&quot;,&quot;__theme_url_scoped_tomorrow_night&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/tomorrow-night-c678af8fa96920aaec0489063234332c9ff8a25465ff6cb0d7d80f9d3b03965d.css&quot;,&quot;__theme_url_scoped_oceanic_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/oceanic-dark-f007150cbb94758d4ffa5c8f4f1cc497ce87450a59ada9ef8b5509ce89550453.css&quot;,&quot;__theme_url_scoped_panda&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/panda-e3ddae9383628060c4a38185582057f48efe3a5d242e19be01613ca3c0b35b8e.css&quot;,&quot;__theme_url_scoped_duotone_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/duotone-dark-354e680ae1137926effc7bec4c40012abfa5282d4c91a1b6444e6240832da061.css&quot;,&quot;__theme_url_scoped_highcontrast_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/highcontrast-dark-4283b418e0ad8a736f5e815bde556d1213c93c157cfdac1676c763be6f09bf81.css&quot;,&quot;__theme_url_scoped_classic&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/classic-41b8fec802b69aedc27317ee3e7db770e54f665baac74b4bac1e0567576f1e1a.css&quot;,&quot;__theme_url_scoped_solarized_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/solarized-light-5e6cd253f90953f2f09e0cf710967781410d2a2bd8cfca7fecd5f11349c05ddb.css&quot;,&quot;__theme_url_scoped_xq_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/xq-light-b2da0e3f28a36389d09ee091d082012dda9211bcf5d6eed73124e0c41194e515.css&quot;,&quot;__theme_url_scoped_oceanic_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/oceanic-light-8131642926771460e49119a8414a830c5bac47f253e1039b7c4f6adf432078a0.css&quot;,&quot;__theme_url_scoped_mdn_like&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/mdn-like-ba9806172de8c652f7ed60e132dea3393f7ee8e7ea1ebdbe177b2d09f87ea567.css&quot;,&quot;__theme_url_scoped_duotone_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/duotone-light-5d109dc9e57a3cb22ed52ca70d93565329d967fcd3a73e2889782bfada418ae6.css&quot;,&quot;__theme_url_scoped_highcontrast_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/highcontrast-light-79981c9f7f50f97707891af48c961d9afa64a75ebd34ab776b1eba80350fdfbb.css&quot;}">
+<script src="./All Devices in SVG_files/browser_support-1963aa6406ae47d3176af996336c5d219acd8913c5af309e72f18933e95201cc.js.download"></script>
+<script src="./All Devices in SVG_files/everypage-6355df8a7667bded07175b6fa20fe8dbe8135ea20a5fc0473bb5cb0406814c5b.js.download"></script>
+<script src="./All Devices in SVG_files/vendor-ba5ce96c560778c517e4.chunk.js.download"></script>
+<script src="./All Devices in SVG_files/3-a18742a3485e03e51f68.chunk.js.download"></script>
+<script src="./All Devices in SVG_files/everypage-f13a1fb6f3dd5e1ed099.js.download"></script>
+<script src="./All Devices in SVG_files/processorRouter-8e33c4c01f52bc6030b5.js.download"></script>
+<script src="./All Devices in SVG_files/commonLibs-7484fe04f7187bb8ecb83c4962db75fdf5d900e6e629bfab2f8df7629e357051.js.download"></script>
+<script src="./All Devices in SVG_files/codemirror-25cdc3b9f9db02dcf45883be3e4fb6f62d9525ce2c4273099eb2c61c84f8462b.js.download"></script>
+<script src="./All Devices in SVG_files/emmet-codemirror-plugin-5d6164559517c9065f31696d2b6c916ff238693ed8c4260c1023e65c0f3fd658.js.download"></script>
+<script src="./All Devices in SVG_files/index-e5b9c69bfe9ebdec86882e7f6d5390a643d824ecbe21b9b78a71e3dad58a5314.js.download"></script>
+
+
+</body></html>

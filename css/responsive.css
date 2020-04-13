@@ -1,0 +1,366 @@
+
+/* Mobile Menu */
+
+.site-nav-wrapper
+{
+    width: 100%;
+    display: inline-block;
+}
+
+.navbar-header{
+    position: relative;
+   
+}
+#mobile-nav-open-btn{
+    font-size: 30px;
+    color: #f4c613;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    right: 50px;
+    top: 0px;
+    /* hide nav */
+    display: none;
+
+}
+
+#mobile-nav{
+    /* default ma chai hidden hunnu parcha */
+    width: 100%;
+    position: fixed;
+    top: -100%;
+    background-color: rgba(255,255,255,.9);
+    z-index: 3;
+    left: 0;
+    transition: all 300ms linear;
+    /*display: none;*/
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    height: 100%;
+}
+
+#mobile-nav-content .nav{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+#mobile-nav-close-btn{
+    position:absolute;
+    right: 20px;
+    font-size: 60px;
+    cursor: 'pointer';
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+#mobile-nav-content{
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    top: 10%;
+}
+
+#mobile-nav ul li{
+    margin-bottom: 20px;
+}
+#mobile-nav a{
+    font-family: "Raleway",sans-serif;
+    font-size: 18px;
+    color: #212226;
+    text-transform: uppercase;
+    display: inline;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus{
+    color:#f4c613
+}
+
+.white-nav-top #mobile-nav ul.nav > li > a.active{
+    color: #f4c613;
+}
+
+
+
+
+/* bootstrap ko media queries for responive */
+
+/* large devices haru ko lagi */
+@media (min-width: 1200px){
+
+}
+
+/*medium devices haru medium desktops ko lagi*/
+@media (min-width: 992px) and (max-width: 1199px)
+{
+    #arrow-down {
+     
+        bottom: 300px;
+    }
+
+    .vertical-heading h3{
+        font-size: 30px;
+    }
+
+ 
+    
+}
+
+/* small devices () tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px)
+{
+   /* #home-heading h1{ 
+       font-size: 45px;
+    }
+    #home-text p{
+        font-size: 21px;
+    } */
+    #home-btn a {
+     font-size: 13px;
+    }
+    
+    .vertical-heading h3{
+        font-size: 30px;
+    } 
+
+    #home{
+        height: 74%;
+    }
+    #arrow-down {
+     
+        bottom: 280px;
+    }
+    #curve{
+        top: 80%;
+    }
+
+    #statement h3{
+        font-size: 25px;
+    }
+
+
+    .stats-item h3{
+        font-size: 25px;
+    }
+    .stats-item i{
+        font-size: 30px;
+    }
+    
+       ul.office-details li{
+        font-family: "Open Sans",sans-serif;
+        margin-top: 10px;
+        display: flex;
+        font-size: 14px;
+    }
+
+    ul.office-details li i{
+        font-size: 15px;
+        width: 45px;
+        margin-top: 4px;
+}
+
+.google-map iframe
+{
+    height: 200;
+}
+
+   #mobile-nav-open-btn{
+        display: block;
+    }
+
+    .navbar{
+        padding: 20px 0;
+    }
+    .site-nav-wrapper,.white-nav-top
+    {
+        padding: 5px;
+    }
+}
+
+
+/* Extra small devices (phone haru ko lagu) tablets and small desktops */
+@media (max-width: 767px)
+{
+    #home-heading h1{
+        font-size: 45px;
+    }
+    #home-text p{
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+    #home-btn a{
+        font-size: 14px;
+        padding: 12px;
+    }
+    #arrow-down{
+        bottom:190px;
+        font-size: 24px;
+    }
+
+    #home{
+        height: 99%;
+    }
+    #tech-statement h3 {
+        font-size: 20px;
+        line-height:30px;
+       
+    }
+    #statement .statement-overlay{
+    padding:  30px 0 ;
+    }
+    #curve{
+        top: 80%;
+    }
+    #home-content{
+        margin-top: 50px;
+    }
+
+    .content-box-lg {
+        padding: 40px 0px;
+        /* display: none; */
+    }
+
+    .vertical-heading{
+        text-align: center;
+        
+    }
+    .vertical-heading h5{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        display: block;
+        position: static;
+
+      
+}
+    #about-left .vertical-heading h5{
+        min-height: 30px;
+}
+    .vertical-heading h3{
+        font-size: 29px;
+        line-height: normal;
+        margin: 0;
+    }
+
+    #about-right {
+        text-align: center;
+    
+        
+    }
+    .content-box-md{
+        padding: 60px 0px;
+    }
+
+    .about-item
+    {
+        padding: 55px 30px;
+        margin-bottom: 30px;
+    }
+    .about-item i{
+        font-size: 30px;
+    }
+    .about-item h3{
+        font-size: 18px;
+    }
+
+    #team-left .vertical-heading{
+        min-height: 120px;
+    }
+    .skill h4{
+        font-size: 14px;
+        line-height: 35px;
+    }
+
+    .horizontal-heading{
+        margin-bottom: 40px;
+    }
+
+    .horizontal-heading h3{
+        font-size: 30px;
+    }
+
+    #services-01 svg{
+        margin-top: -100px;
+    }
+    #services{
+        margin-bottom: 0;
+    }
+    .service{
+        margin-top: -50px;
+        text-align: center;
+      
+    }
+    .service .icon {
+        text-align: center!important;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .testimonial h3{
+        font-size: 18px;
+    }
+    ul.office-details li {
+        display: block;
+        margin-top: 25px;
+    }
+    ul.office-details li i{
+        display: block;
+        width: auto;
+        margin-bottom: 3px;
+
+    }
+    ul.social-list{
+        margin-bottom: 80px;
+    }
+    #contact-left , .office ul.office-details li {
+        text-align: center !important;
+    }
+
+.testimonial .stars{
+    font-size: 15px;
+}
+
+.author{
+    text-align: center;
+}
+
+.author img{
+    width: 80px !important;
+    text-align: center;
+ 
+}
+  
+#mobile-nav-open-btn{
+    display: block;
+}
+
+.navbar{
+    padding: 20px 10px;
+}
+
+.site-nav-wrapper,.white-nav-top
+{
+    padding: 5px  ;
+}
+
+#clients .exception{
+    margin-left:  10px;
+}
+}
+
+

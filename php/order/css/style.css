@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Leckerli+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&display=swap');
+
+/* font-family: 'Leckerli One', cursive; */
+
+
+/*
+
+********************************************************  HTML and BODY     ******************************
+
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: #212226;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+p {
+    font-family: "Open sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+section {
+    background: #fff;
+    overflow: hidden;
+}
+
+#home {
+    background: none;
+    height: 100%;
+    /* display: none; */
+
+}
+
+
+
+/* preloader */
+#preloader {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+#status {
+    background-image: url(../images/Gearv2.gif);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+
+/*
+
+******************************************************** Intro with parallex      ******************************
+
+*/
+/* #bg
+{
+    height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+} */
+
+.parallax {
+    height: 100vh;
+    background: transparent;
+    z-index: -2;
+}
+
+#home-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+    /* display: none; */
+}
+
+
+/*
+
+********************************************************  Hpme content    ******************************
+
+*/
+.content {
+    height: 100vh;
+}
+
+
+#home-content {
+
+    width: 100%;
+    height: 100%;
+    display: table;
+
+}
+
+#home-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+#home-heading h1 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: 100;
+    margin: 0;
+    display: inline-block;
+    text-shadow: 3px 3px 10px #000;
+
+}
+
+#curve {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    top: 80%;
+
+}
+
+#curve #wave {
+
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+/* testing */
+.home-container h1 {
+    font-size: 2.8rem;
+    color: rgb(224, 217, 217);
+    /* text-align: left; */
+    font-weight: 150;
+    /* margin-left: 100px; */
+    text-shadow: 3px 3px 10px #000;
+
+}
+
+.txt-type {
+    color: #f4c613;
+}
+
+.txt-type>.txt {
+    border-right: 0.2rem solid rgb(184, 184, 184);
+}
+
+
+/* home heading */
+#home-heading span {
+    color: #f4c613;
+    font-weight: 550;
+}
+
+#tag {
+    color: white;
+}
+
+#home-text p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 100;
+    margin: 8px 0 30px 0;
+    text-shadow: 3px 3px 10px #000;
+
+}
+
+/*
+
+********************************************************  Button Stylings      ******************************
+
+*/
+
+
+/*
+ new noen button style 
+ HOME BUTTON ONLY
+
+ */
+#home-btn a {
+    font-family: "Raleway", sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #e1e6eb;
+    text-transform: uppercase;
+    letter-spacing: px;
+    text-decoration: none;
+    font-size: 16px;
+    overflow: hidden;
+    transition: 0.2s;
+    /* border:0.1px solid white; */
+}
+
+#home-btn a:hover {
+    color: #255784;
+    background-color: #eee351;
+    box-shadow: 0px 0px 10px #eee351, 0px 0px 40px #eee351, 0px 0px 80px #eee351;
+    transition-delay: 1s;
+    text-decoration: none;
+    ;
+
+}
+
+#home-btn a span {
+    position: absolute;
+    display: block;
+
+}
+
+#home-btn a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #eee351);
+}
+
+#home-btn a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+#home-btn a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #eee351);
+}
+
+#home-btn a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#home-btn a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #eee351);
+}
+
+#home-btn a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#home-btn a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(-180deg, transparent, #eee351);
+}
+
+#home-btn a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+
+/* 
+
+Other buttons styling 
+
+*/
+.btn-general {
+    font-family: "Raleway", sans-serif;
+    border-radius: 20px;
+    font-size: 13px;
+    margin: 0 6px;
+    padding: 12px 46px 12px 46px;
+    transition: all 0.5s;
+}
+
+.btn-home {
+    color: white;
+    border: 1px solid white;
+    text-shadow: 3px 3px 10px #000;
+
+}
+
+.btn-read-more {
+    color: #212226;
+    background-color: #f5de81;
+    border: 1px solid #f1e3aa;
+    margin-bottom: 10px;
+
+}
+
+.btn-home:hover,
+.btn-read-more:hover,
+.btn-home:focus {
+    color: #212226;
+    background-color: #f4c613;
+    border: 1px solid #f1e3aa;
+    text-shadow: none;
+
+}
+
+
+
+/*
+
+********************************************************button down******************************
+
+*/
+
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    color: white;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    transform: translateX(-50%);
+    transition: all 0.5s;
+}
+
+#arrow-down:hover,
+#arrow-down:focus {
+    color: #f4c613;
+
+}
+
+
+
+
+/*
+
+******************************************************** Content boxes    ******************************
+
+*/
+.content-box-lg {
+    padding: 80px 0px;
+    /* display: none; */
+}
+
+.content-box-md {
+    padding: 80px 0px;
+}
+
+
+/*
+
+********************************************************  vertical heading Stylings      ******************************
+
+*/
+#about-left .vertical-heading {
+    min-height: 160px;
+}
+
+.vertical-heading h5 {
+    color: #f4c613;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    display: inline-block;
+    /*background: #212226;
+    */
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    position: relative;
+    top: 60px;
+    left: -50px;
+
+}
+
+.vertical-heading h3 {
+    margin: 0 0 0 35px;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 45px;
+}
+
+
+
+/*
+
+******************************************************** About styling part1      ******************************
+
+*/
+
+#about-right p:first-child {
+    margin-bottom: 10px;
+}
+
+#about-bottom {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#about-bottom img {
+    margin: 0 auto;
+
+}
+
+strong {
+    font-weight: 600;
+}
+
+
+/*
+
+********************************************************  About Styling part 2    ******************************
+
+*/
+
+
+#about-02 {
+    background-color: #f4f4f4;
+}
+
+
+.about-title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-title h3 {
+    text-transform: uppercase;
+    margin: 15px;
+}
+
+.about-title hr {
+    width: 45px;
+    height: 3px;
+    background-color: #f4c613;
+    margin: auto;
+    border: none;
+    transition: all 400ms ease-in-out;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+}
+
+.about-title p {
+    font-weight: 400;
+    /* font-size: 18px; */
+    margin-top: 20px;
+
+}
+
+
+.about-item {
+    position: relative;
+    background-color: #fff;
+    padding: 80px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 400ms ease-in-out;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+}
+
+.about-item i {
+    font-size: 40px;
+    margin: 5px;
+    transition: all 400ms ease-in-out;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    color: #46464b;
+
+}
+
+.about-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #46464b;
+}
+
+.about-item hr {
+    width: 45px;
+    height: 3px;
+    background-color: #f4c613;
+    margin: auto;
+    border: none;
+    transition: all 400ms ease-in-out;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+}
+
+.about-item p {
+    margin-top: 20px;
+    /* font-weight: 350; */
+}
+
+/* now hovering ko palo hai guys ahh ha!! */
+
+.about-item:hover {
+    background-color: #f4c613;
+}
+
+.about-item:hover>hr {
+    background-color: #46464b;
+}
+
+
+
+.about-item:hover>i {
+
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+}
+
+/****************************************TEAM SECTION*********************************************/
+
+#team-left .vertical-heading {
+
+    min-height: 160px;
+}
+
+#team-members .team-member {
+    margin: 8px;
+    position: relative;
+}
+
+.team-member .team-member-overlay {
+    background: rgba(33, 34, 38, .9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.team-member-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.team-member-info h6 {
+    color: #f4c613;
+    font-size: 16px;
+    margin: 0;
+
+}
+
+.team-member-info p {
+    color: #fff;
+}
+
+.team-member:hover .team-member-overlay {
+    opacity: 1;
+}
+
+/*******************social icons*********/
+
+ul.social-list {
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul.social-list li {
+    display: inline-block;
+    padding: 0;
+
+}
+
+ul.social-list li a {
+    display: inline-block;
+    border: 1px solid #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+
+ul.social-list li:nth-child(1) a:hover {
+    background: #3b5998;
+    border-color: transparent;
+
+}
+
+ul.social-list li:nth-child(2) a:hover {
+    background: #00aced;
+    border-color: transparent;
+
+}
+
+ul.social-list li:nth-child(3) a:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-color: transparent;
+}
+
+.owl-theme .owl-nav [class*=owl-] i {
+    color: #212226;
+    background: none;
+    margin: 0;
+    font-size: 30px;
+    padding: 5px;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+.owl-theme .owl-nav [class*=owl-] i:hover {
+    padding: 5px;
+    background-color: #f4c613;
+}
+
+/******************************************skills slider ko lagi hai guyz***************************************/
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill h4 {
+    line-height: 50px;
+    font-size: 18px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.progress {
+    height: 20px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    background: #efefef;
+    overflow: visible;
+}
+
+.progress-bar {
+    position: relative;
+    background: #f4c613;
+}
+
+.progress-bar span {
+    background: #212226;
+    padding: 3px;
+    position: absolute;
+    left: 97%;
+    top: -180%;
+    font-size: 11px;
+}
+
+.progress-bar span::before {
+    content: "";
+    border-top: 8px solid #212226;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 23%;
+}
+
+
+
+/* #home
+{
+    display: none;
+}
+ #about
+{
+    display: none;
+} 
+
+ .first
+{
+    display: none;
+} 
+ */
