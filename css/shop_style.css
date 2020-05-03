@@ -28,7 +28,7 @@ header {
 
 .banner {
   position: relative;
-  background-image: url(../images/products/tea.jpg);
+  background-image: url(../images/banners/opt_banner.jpg);
   min-height: 100vh;
   background-size: cover;
   background-position: center;
