@@ -93,7 +93,6 @@ if(isset($_POST['add_deliveryBoy'])){
         icon: 'error',
         title: 'Oops...',
         text: 'Something went wrong!',
-        footer:  mysqli_error($conn);
         }).then((result) => {
         if (result.value) {
          // 
