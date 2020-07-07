@@ -138,7 +138,7 @@ include "include/dbconnect.php";
             <h2>Everest Gas 13.5L</h2>
           </div>
           <div class="row">
-            <h1><i class="fa fa-inr" aria-hidden="true"></i> 1350</h1>
+            <h1>रू 1350</h1>
             &nbsp; &nbsp;
             <h3><del>1500</del></h3>
             &nbsp; &nbsp;
@@ -193,7 +193,7 @@ include "include/dbconnect.php";
               <i class="fa fa-map-marker" aria-hidden="true"></i>
             </h3>
             <p style="font-size: 20px">
-              &nbsp; Delivery by 19 March, Tuesday | &nbsp;
+              &nbsp; Delivery by July 1, Wednesday | &nbsp;
               <span class="text-success">FREE</span>
             </p>
           </div>
@@ -207,6 +207,7 @@ include "include/dbconnect.php";
     </div>
 
     <div class="container">
+    
       <div class="row mt-5">
         <h2>Our Partner Brands</h2>
       </div>
@@ -220,9 +221,12 @@ include "include/dbconnect.php";
           while($row=mysqli_fetch_assoc($res))
           {               
         ?>
+        
 
         <div class="col-md-3">
-          <div class="card">
+        
+          <div class="card card-body " style="height:80% !important">
+          
             <img
               class="card-img-top img-fluid"
               src="images/products/<?= $row['featured_image'];?>"
@@ -233,6 +237,7 @@ include "include/dbconnect.php";
             <div class="card-text">
              <?php echo $row['content']?>
               <br /><br />
+              <h5 class="card-title">Card title</h5>
               <?php 
               if($row['stock']>10)
               { ?>
@@ -251,7 +256,7 @@ include "include/dbconnect.php";
               <a class="btn btn-danger text-light"> Out Of Stock</a> &nbsp;
               <?php 
               }
-              ?>
+              ?>    
               
               <br /><br />
             </div>
@@ -261,12 +266,108 @@ include "include/dbconnect.php";
           }
         }
 
-        ?>    
-
-        
-                
+        ?>          
       </div>
     </div>
+
+
+    <!-- Test for the managed list -->
+    <div class="container">
+    
+    <div class="row mt-5">
+      <h2>Our Partner Brands</h2>
+    </div>
+
+    <div class="row mt-5">
+    <?php 
+      $sql="select * from gas_cylinders order by id DESC";
+      $res=mysqli_query($conn,$sql);
+      if(mysqli_num_rows($res)>0)
+      {
+        while($row=mysqli_fetch_assoc($res))
+        {               
+      ?>
+      
+
+      <div class="col-md-3 col-lg-3">
+      
+        <div class="card card-body " style="height:80% !important">
+        
+          <img
+            class="card-img-top img-fluid"
+            src="images/products/<?= $row['featured_image'];?>"
+          />
+           <ul class="list-group list-group-flush">
+    <li class="list-group-item"><div class="card-title">
+            <h4><?php echo $row['title']?></h4>
+          </div></li>
+    <li class="list-group-item"><div class="card-text">
+           <?php echo $row['content']?>
+            </li>
+    <li class="list-group-item"><?php 
+            if($row['stock']>10)
+            { ?>
+            <a class="btn btn-success text-light" href="php/order/checkout.php"> Buy Now</a> &nbsp;
+          
+        <?php }
+        ?>
+        <?php if($row['stock']<10&&$row['stock']>0)
+            { ?>
+            <a class="btn btn-warning text-light" href="php/order/checkout.php" > Limited Stock! Buy Now </a> &nbsp;
+            <?php 
+            }
+            ?>
+            <?php if($row['stock']<=0)
+            { ?>
+            <a class="btn btn-danger text-light"> Out Of Stock</a> &nbsp;
+            <?php 
+            }
+            ?>    </li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+            
+            <br /><br />
+          </div>
+        </div>
+      </div>
+      <?php 
+        }
+      }
+
+      ?>          
+    </div>
+  </div>
+
+    
+
+    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="images/products/<?= $row['featured_image'];?>" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Price</li>
+    <li class="list-group-item"><a class="btn btn-danger text-light"> Out Of Stock</a> &nbsp;</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
     <!---Gas geaser's-->
     <div class="container">
       <div class="row mt-5">
@@ -283,7 +384,7 @@ include "include/dbconnect.php";
         ?>
 
         <div class="col-md-3">
-          <div class="card">
+          <div class="card card-body" style="height:75% !important">
             <img
               class="card-img-top img-fluid"
               src="images/products/<?= $row['featured_image'];?>"

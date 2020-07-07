@@ -14,9 +14,11 @@ if (isset($_POST['add_order'])) {
   $f = $_POST['phone_number'];
   $g = $_POST['image'];
   $h = $_POST['address'];
+  $lat=$_POST['latitude'];
+  $long=$_POST['longitude'];
 
-  $sql = "INSERT INTO `user` (`first_name`, `email`,`last_name`,`item`,`purpose`,`payment`,`quantity`,`phone_number`,`title`,`address`)
-VALUES ('$u', '$e', '$p', '$a', '$b', '$c', '$d', '$f', '$g', '$h');";
+  $sql = "INSERT INTO `user` (`first_name`, `email`,`last_name`,`item`,`purpose`,`payment`,`quantity`,`phone_number`,`title`,`address`,`latitude`,`longitude`)
+VALUES ('$u', '$e', '$p', '$a', '$b', '$c', '$d', '$f', '$g', '$h','$lat','$long');";
 //echo $sql;
 
 $servername = "localhost";
@@ -46,13 +48,7 @@ header("Location: ../../stripe_integration_php");
 }
 mysqli_close($conn);
 }
-
-
 ?>
-
-
-
-
 <?php
 error_reporting(0);
    if(isset($_FILES['image'])){
