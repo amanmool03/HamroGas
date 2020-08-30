@@ -1,0 +1,48 @@
+hr{
+	color: brown;
+	size:5px;
+}
+label
+{
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	/*//font-weight: bold;*/
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
+    -moz-transform: translate3d(0, 20%, 0);
+    -ms-transform: translate3d(0, 20%, 0);
+    -o-transform: translate3d(0, 20%, 0);
+}
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+
