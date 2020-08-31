@@ -107,36 +107,13 @@
         </div> 
         </div>
       </nav> 
-
-      <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Section 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Section 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Section 3</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Section 4
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#section41">Link 1</a>
-              <a class="dropdown-item" href="#section42">Link 2</a>
-            </div>
-          </li>
-        </ul>
-      </nav> -->
     </header>
     <!-- Header ends -->
 
     <!-- home code start-->
     <section id="home">
         <!-- overlay -->
-        <div id="home-overlay"></div>
+        <!-- <div id="home-overlay"></div> -->
         <!-- home content -->
         <div id="home-content">
             <div id="home-content-inner" class="text-center">
@@ -159,14 +136,15 @@
                         BOOK NOW
                     </a>      
                 </div>
-                <div id="curve">
+               
+
+            </div>
+             <div id="curve">
                     <svg id="wave" width="1456" height="195" viewBox="0 0 1456 195" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M972 110.747L0 0V195H1456V54.7736L972 110.747Z" fill="white" id="waveDm"/>
                     </svg>
                 </div>
-
-            </div>
             <!-- arrow down -->
             <a href="#about" id="arrow-down" class="smooth-scroll"><i class="fas fa-angle-down"></i></a>
         </div>
